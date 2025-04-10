@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="wheel" params="wheel_name wheel_radius wheel_thickness wheel_mass wheel_material xyz rpy axis">
+        <link name="${wheel_name}">
+            <visual>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                </geometry>
+                <material name="${wheel_material}"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <sphere radius="${wheel_radius}"/>
+                </geometry>
+            </collision>
+            <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+            </xacro:inertial_cylinder>
+        </link>
+
+        <gazebo reference="${wheel_name}">
+        <material>Gazebo/Blue</material>
+        </gazebo>
+
+        <joint name="${wheel_name}_joint" type="continuous">
+            <parent link="base_link"/>
+            <child link="${wheel_name}"/>
+            <origin xyz="${xyz}" rpy="${rpy}"/>
+            <axis xyz="${axis}"/>
+        </joint>
+    </xacro:macro>
+</robot>

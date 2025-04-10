@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- Drive controller plugin-->
+  <!-- https://github.com/ros-simulation/gazebo_ros_pkgs/wiki/ROS-2-Migration:-Planar-Move -->
+  <gazebo>
+    <plugin name="mecanum_controller" filename="libgazebo_ros_planar_move.so">
+      <ros>
+        <!-- Add a namespace -->
+        <namespace>/</namespace>
+        <!-- Remap the default topic -->
+        <remapping>cmd_vel:=cmd_vel_chassis</remapping>
+        <remapping>odom:=odom</remapping>
+      </ros>
+
+      <!-- Set control loop update rate -->
+      <update_rate>100</update_rate>
+      <!-- Set odom publish rate -->
+      <publish_rate>10</publish_rate>
+
+      <!-- Set if odom required -->
+      <publish_odom>false</publish_odom>
+      <publish_odom_tf>false</publish_odom_tf>
+
+      <!-- Frame IDs -->
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+
+      <!-- Set odom covariance -->
+      <covariance_x>0.0001</covariance_x>
+      <covariance_y>0.0001</covariance_y>
+      <covariance_yaw>0.01</covariance_yaw>
+    </plugin>
+  </gazebo>
+  
+</robot>

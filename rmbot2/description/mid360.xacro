@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+ <!-- IMU joint -->
+  <joint name="imu_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="0 0 0.138" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+  </joint>
+
+ <!-- Livox-Mid360  -->
+  <xacro:include filename="$(find ros2_livox_simulation)/urdf/mid360.xacro" />
+  <xacro:mid360 name="livox_frame" parent="base_link" topic="/livox/lidar">
+    <origin xyz="0 0 0.2" rpy="0 0 0" />
+  </xacro:mid360>
+
+  <gazebo reference="livox_frame">
+        <material>Gazebo/LightBlueLaser</material>
+  </gazebo> 
+
+
+<!-- Livox-imu -->
+
+<!-- mid360_imu plugin -->
+  <!-- https://github.com/ros-simulation/gazebo_ros_pkgs/wiki/ROS-2-Migration:-IMU-Sensors -->
+
+  <gazebo reference="imu_link">
+    <sensor name="mid360_imu" type="imu">
+      <always_on>true</always_on>
+      <update_rate>10</update_rate>
+      <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <ros>
+          <namespace>/</namespace>
+          <remapping>~/out:=/livox/imu</remapping>
+        </ros>
+        <frame_name>imu_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+ <!-- IMU -->
+  <link name="imu_link">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <inertial>
+      <mass value="1e-2" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <gazebo reference="imu_link">
+    <material>Gazebo/BuildingFrame</material>
+  </gazebo>
+
+
+</robot>
