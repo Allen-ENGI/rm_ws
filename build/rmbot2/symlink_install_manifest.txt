@@ -16,6 +16,7 @@
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/launch_world.launch.py
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/lidar.launch.py
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/mapping.launch.py
+/home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/nav.launch.py
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/rsp.launch.py
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/view.launch.py
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUC2024_world/RMUC2024_world.world
