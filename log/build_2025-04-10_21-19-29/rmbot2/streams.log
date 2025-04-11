@@ -1,0 +1,157 @@
+[0.017s] Invoking command in '/home/allen/rm_ws/build/rmbot2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rmbot2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rmbot2
+[0.137s] -- The C compiler identification is GNU 11.4.0
+[0.247s] -- The CXX compiler identification is GNU 11.4.0
+[0.263s] -- Detecting C compiler ABI info
+[0.431s] -- Detecting C compiler ABI info - done
+[0.441s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.441s] -- Detecting C compile features
+[0.443s] -- Detecting C compile features - done
+[0.446s] -- Detecting CXX compiler ABI info
+[0.630s] -- Detecting CXX compiler ABI info - done
+[0.642s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.643s] -- Detecting CXX compile features
+[0.643s] -- Detecting CXX compile features - done
+[0.651s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.934s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.050s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.100s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.185s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.195s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.206s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.231s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.258s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.294s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.297s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.314s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.322s] -- Looking for pthread.h
+[1.402s] -- Looking for pthread.h - found
+[1.402s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.486s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.487s] -- Found Threads: TRUE  
+[1.528s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.721s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.721s] -- Configured cppcheck include dirs: 
+[1.721s] -- Configured cppcheck exclude dirs and/or files: 
+[1.723s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.729s] -- Added test 'lint_cmake' to check CMake code style
+[1.730s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.746s] -- Added test 'uncrustify' to check C / C++ code style
+[1.746s] -- Configured uncrustify additional arguments: 
+[1.748s] -- Added test 'xmllint' to check XML markup files
+[1.752s] -- Configuring done
+[1.763s] -- Generating done
+[1.766s] -- Build files have been written to: /home/allen/rm_ws/build/rmbot2
+[1.787s] Invoked command in '/home/allen/rm_ws/build/rmbot2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rmbot2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rmbot2
+[1.791s] Invoking command in '/home/allen/rm_ws/build/rmbot2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rmbot2 -- -j2 -l2
+[1.903s] Invoked command in '/home/allen/rm_ws/build/rmbot2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rmbot2 -- -j2 -l2
+[1.907s] Invoking command in '/home/allen/rm_ws/build/rmbot2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rmbot2
+[1.927s] -- Install configuration: ""
+[1.927s] -- Execute custom install script
+[1.928s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/config/simulation/fastlio_mid360_sim.yaml
+[1.954s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/config/simulation/mapper_params_offline_async.yaml
+[1.976s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/config/simulation/mapper_params_online_async_sim.yaml
+[2.000s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/config/simulation/segmentation_sim.yaml
+[2.025s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control.xacro
+[2.052s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control2.xacro
+[2.071s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control3.xacro
+[2.094s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/inertial_macros.xacro
+[2.117s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/lidar.xacro
+[2.143s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/mid360.xacro
+[2.166s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/robot.urdf.xacro
+[2.189s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/robot_core2.xacro
+[2.210s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/robot_core_upper.xacro
+[2.232s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/robot_structure.xacro
+[2.258s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/wheel.xacro
+[2.284s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/launch_world.launch.py
+[2.306s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/lidar.launch.py
+[2.333s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/mapping.launch.py
+[2.357s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/rsp.launch.py
+[2.381s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/view.launch.py
+[2.405s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUC2024_world/RMUC2024_world.world
+[2.430s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2024_world/RMUL2024_world.world
+[2.456s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2024_world/RMUL2024_world_dynamic_obstacles.world
+[2.474s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2024_world/model.config
+[2.482s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2024_world/model.sdf
+[2.493s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2025NA_world/RMULNA2025_world.world
+[2.506s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2025NA_world/RMULNA2025_world_dynamic_obstacles.world
+[2.517s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2025NA_world/model.config
+[2.530s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2025NA_world/model.sdf
+[2.542s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/rmul_map_save.pgm
+[2.559s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/rmul_map_save.yaml
+[2.583s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/rmul_map_serial.data
+[2.605s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/rmul_map_serial.posegraph
+[2.629s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/ul_map.data
+[2.652s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/ul_map.pgm
+[2.677s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/ul_map.posegraph
+[2.702s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/ul_map.yaml
+[2.735s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/RMUC2024_world/meshes/RMUC_2024.stl
+[2.756s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/RMUC2024_world/model.config
+[2.778s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/RMUC2024_world/model.sdf
+[2.804s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/RMUL2024_world/meshes/RMUL_2024.stl
+[2.827s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/mid360.stl
+[2.850s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle1/model.config
+[2.875s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle1/model.sdf
+[2.898s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle10/model.config
+[2.921s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle10/model.sdf
+[2.946s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle11/model.config
+[2.965s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle11/model.sdf
+[2.979s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle12/model.config
+[2.988s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle12/model.sdf
+[3.000s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle2/model.config
+[3.011s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle2/model.sdf
+[3.023s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle3/model.config
+[3.039s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle3/model.sdf
+[3.065s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle4/model.config
+[3.088s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle4/model.sdf
+[3.111s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle5/model.config
+[3.138s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle5/model.sdf
+[3.162s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle6/model.config
+[3.185s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle6/model.sdf
+[3.210s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle7/model.config
+[3.232s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle7/model.sdf
+[3.256s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle8/model.config
+[3.279s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle8/model.sdf
+[3.301s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle9/model.config
+[3.321s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle9/model.sdf
+[3.345s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/CMakeLists.txt
+[3.369s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle1.so
+[3.393s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle10.so
+[3.414s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle11.so
+[3.438s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle12.so
+[3.464s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle2.so
+[3.488s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle3.so
+[3.511s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle4.so
+[3.537s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle5.so
+[3.560s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle6.so
+[3.584s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle7.so
+[3.610s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle8.so
+[3.632s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle9.so
+[3.658s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacles.so
+[3.669s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle1.cc
+[3.692s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle10.cc
+[3.714s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle11.cc
+[3.737s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle12.cc
+[3.763s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle13.cc
+[3.788s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle2.cc
+[3.809s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle3.cc
+[3.826s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle4.cc
+[3.849s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle5.cc
+[3.874s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle6.cc
+[3.897s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle7.cc
+[3.918s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle8.cc
+[3.944s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle9.cc
+[3.970s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacles.cc
+[3.995s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/fastlio.rviz
+[4.015s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/gazebo.rviz
+[4.040s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/pointlio.rviz
+[4.065s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/rviz2.rviz
+[4.093s] -- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/rviz_lidar.rviz
+[4.119s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[4.121s]   ament_cmake_symlink_install_directory() can't find
+[4.121s]   '/home/allen/rm_ws/src/rmbot2/PCD'
+[4.121s] Call Stack (most recent call first):
+[4.121s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[4.121s]   cmake_install.cmake:46 (include)
+[4.121s] 
+[4.121s] [0m
+[4.123s] Invoked command in '/home/allen/rm_ws/build/rmbot2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rmbot2

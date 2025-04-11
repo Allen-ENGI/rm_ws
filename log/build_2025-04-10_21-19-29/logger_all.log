@@ -1,0 +1,558 @@
+[0.086s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.086s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a43d770b430>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a43d770ab30>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a43d770ab30>>)
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.222s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/allen/rm_ws'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_nav_bringup) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_nav_bringup' with type 'ros.ament_cmake' and name 'rm_nav_bringup'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'ros'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['cmake', 'python']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'cmake'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'python'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extensions ['python_setup_py']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation) by extension 'python_setup_py'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extension 'ros'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extensions ['cmake', 'python']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extension 'cmake'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extension 'python'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extensions ['python_setup_py']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter) by extension 'python_setup_py'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigation/costmap_converter/costmap_converter' with type 'ros.ament_cmake' and name 'costmap_converter'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/costmap_converter/costmap_converter_msgs) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigation/costmap_converter/costmap_converter_msgs' with type 'ros.ament_cmake' and name 'costmap_converter_msgs'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/fake_vel_transform) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigation/fake_vel_transform' with type 'ros.ament_cmake' and name 'fake_vel_transform'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/rm_navigation) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigation/rm_navigation' with type 'ros.ament_cmake' and name 'rm_navigation'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_local_planner) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigation/teb_local_planner/teb_local_planner' with type 'ros.ament_cmake' and name 'teb_local_planner'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rm_navigation/teb_local_planner/teb_msgs) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rm_navigation/teb_local_planner/teb_msgs' with type 'ros.ament_cmake' and name 'teb_msgs'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/rmbot2) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rmbot2' with type 'ros.ament_cmake' and name 'rmbot2'
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.279s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 378 installed packages in /opt/ros/humble
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'cmake_target' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'costmap_converter_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/allen/rm_ws/build/costmap_converter_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/allen/rm_ws/install/costmap_converter_msgs', 'merge_install': False, 'path': '/home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'cmake_target' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'cmake_clean_cache' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'cmake_clean_first' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'cmake_force_configure' from command line to 'False'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'fake_vel_transform' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'fake_vel_transform' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/allen/rm_ws/build/fake_vel_transform', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/allen/rm_ws/install/fake_vel_transform', 'merge_install': False, 'path': '/home/allen/rm_ws/src/rm_navigation/fake_vel_transform', 'symlink_install': True, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_nav_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'rm_nav_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/allen/rm_ws/build/rm_nav_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/allen/rm_ws/install/rm_nav_bringup', 'merge_install': False, 'path': '/home/allen/rm_ws/src/rm_nav_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rm_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'rm_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/allen/rm_ws/build/rm_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/allen/rm_ws/install/rm_navigation', 'merge_install': False, 'path': '/home/allen/rm_ws/src/rm_navigation/rm_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'cmake_clean_first' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'cmake_force_configure' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'ament_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'rmbot2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'rmbot2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/allen/rm_ws/build/rmbot2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/allen/rm_ws/install/rmbot2', 'merge_install': False, 'path': '/home/allen/rm_ws/src/rmbot2', 'symlink_install': True, 'test_result_base': None}
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'cmake_target' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'cmake_clean_first' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'cmake_force_configure' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'ament_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'costmap_converter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'costmap_converter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/allen/rm_ws/build/costmap_converter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/allen/rm_ws/install/costmap_converter', 'merge_install': False, 'path': '/home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter', 'symlink_install': True, 'test_result_base': None}
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'cmake_target' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'teb_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/allen/rm_ws/build/teb_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/allen/rm_ws/install/teb_msgs', 'merge_install': False, 'path': '/home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'cmake_target' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'cmake_clean_cache' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'cmake_clean_first' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'cmake_force_configure' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'ament_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'catkin_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'teb_local_planner' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.320s] DEBUG:colcon.colcon_core.verb:Building package 'teb_local_planner' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/allen/rm_ws/build/teb_local_planner', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/allen/rm_ws/install/teb_local_planner', 'merge_install': False, 'path': '/home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_local_planner', 'symlink_install': True, 'test_result_base': None}
+[0.320s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.321s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.322s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter_msgs' with build type 'ament_cmake'
+[0.322s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter_msgs'
+[0.326s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.327s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.327s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.330s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/allen/rm_ws/src/rm_navigation/fake_vel_transform' with build type 'ament_cmake'
+[0.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/allen/rm_ws/src/rm_navigation/fake_vel_transform'
+[0.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/costmap_converter_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/costmap_converter_msgs
+[0.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/fake_vel_transform': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/fake_vel_transform -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/fake_vel_transform
+[1.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/fake_vel_transform' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/fake_vel_transform -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/fake_vel_transform
+[1.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/fake_vel_transform': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/fake_vel_transform -- -j2 -l2
+[2.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/costmap_converter_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/costmap_converter_msgs
+[2.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/costmap_converter_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/costmap_converter_msgs -- -j2 -l2
+[11.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/costmap_converter_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/costmap_converter_msgs -- -j2 -l2
+[11.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/costmap_converter_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/costmap_converter_msgs
+[12.363s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(costmap_converter_msgs)
+[12.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/costmap_converter_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/costmap_converter_msgs
+[12.371s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs' for CMake module files
+[12.372s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs' for CMake config files
+[12.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('costmap_converter_msgs', 'cmake_prefix_path')
+[12.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/cmake_prefix_path.ps1'
+[12.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/cmake_prefix_path.dsv'
+[12.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/cmake_prefix_path.sh'
+[12.376s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/lib'
+[12.376s] Level 1:colcon.colcon_core.shell:create_environment_hook('costmap_converter_msgs', 'ld_library_path_lib')
+[12.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/ld_library_path_lib.ps1'
+[12.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/ld_library_path_lib.dsv'
+[12.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/ld_library_path_lib.sh'
+[12.377s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/bin'
+[12.377s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/lib/pkgconfig/costmap_converter_msgs.pc'
+[12.377s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/lib/python3.10/site-packages'
+[12.377s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/bin'
+[12.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.ps1'
+[12.379s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.dsv'
+[12.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.sh'
+[12.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.bash'
+[12.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.zsh'
+[12.382s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/costmap_converter_msgs/share/colcon-core/packages/costmap_converter_msgs)
+[12.382s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(costmap_converter_msgs)
+[12.382s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs' for CMake module files
+[12.383s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs' for CMake config files
+[12.383s] Level 1:colcon.colcon_core.shell:create_environment_hook('costmap_converter_msgs', 'cmake_prefix_path')
+[12.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/cmake_prefix_path.ps1'
+[12.384s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/cmake_prefix_path.dsv'
+[12.384s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/cmake_prefix_path.sh'
+[12.385s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/lib'
+[12.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('costmap_converter_msgs', 'ld_library_path_lib')
+[12.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/ld_library_path_lib.ps1'
+[12.385s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/ld_library_path_lib.dsv'
+[12.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/hook/ld_library_path_lib.sh'
+[12.386s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/bin'
+[12.386s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/lib/pkgconfig/costmap_converter_msgs.pc'
+[12.386s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/lib/python3.10/site-packages'
+[12.387s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/costmap_converter_msgs/bin'
+[12.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.ps1'
+[12.387s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.dsv'
+[12.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.sh'
+[12.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.bash'
+[12.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/costmap_converter_msgs/share/costmap_converter_msgs/package.zsh'
+[12.389s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/costmap_converter_msgs/share/colcon-core/packages/costmap_converter_msgs)
+[12.390s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter' with build type 'ament_cmake'
+[12.390s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter'
+[12.390s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.390s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/costmap_converter': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/costmap_converter
+[14.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/costmap_converter' returned '0': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/costmap_converter
+[14.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/costmap_converter': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/allen/rm_ws/build/costmap_converter -- -j2 -l2
+[22.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/fake_vel_transform' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/fake_vel_transform -- -j2 -l2
+[22.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/fake_vel_transform': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/fake_vel_transform
+[23.305s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fake_vel_transform)
+[23.305s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform' for CMake module files
+[23.306s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform' for CMake config files
+[23.306s] Level 1:colcon.colcon_core.shell:create_environment_hook('fake_vel_transform', 'cmake_prefix_path')
+[23.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/cmake_prefix_path.ps1'
+[23.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/cmake_prefix_path.dsv'
+[23.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/fake_vel_transform' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/fake_vel_transform
+[23.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/cmake_prefix_path.sh'
+[23.310s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/lib'
+[23.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('fake_vel_transform', 'ld_library_path_lib')
+[23.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/ld_library_path_lib.ps1'
+[23.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/ld_library_path_lib.dsv'
+[23.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/ld_library_path_lib.sh'
+[23.313s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/bin'
+[23.313s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/lib/pkgconfig/fake_vel_transform.pc'
+[23.313s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/lib/python3.10/site-packages'
+[23.314s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/bin'
+[23.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.ps1'
+[23.314s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.dsv'
+[23.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.sh'
+[23.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.bash'
+[23.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.zsh'
+[23.318s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/fake_vel_transform/share/colcon-core/packages/fake_vel_transform)
+[23.318s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fake_vel_transform)
+[23.318s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform' for CMake module files
+[23.319s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform' for CMake config files
+[23.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('fake_vel_transform', 'cmake_prefix_path')
+[23.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/cmake_prefix_path.ps1'
+[23.322s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/cmake_prefix_path.dsv'
+[23.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/cmake_prefix_path.sh'
+[23.325s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/lib'
+[23.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('fake_vel_transform', 'ld_library_path_lib')
+[23.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/ld_library_path_lib.ps1'
+[23.326s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/ld_library_path_lib.dsv'
+[23.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/hook/ld_library_path_lib.sh'
+[23.327s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/bin'
+[23.327s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/lib/pkgconfig/fake_vel_transform.pc'
+[23.329s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/lib/python3.10/site-packages'
+[23.329s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/fake_vel_transform/bin'
+[23.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.ps1'
+[23.330s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.dsv'
+[23.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.sh'
+[23.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.bash'
+[23.334s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/fake_vel_transform/share/fake_vel_transform/package.zsh'
+[23.334s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/fake_vel_transform/share/colcon-core/packages/fake_vel_transform)
+[23.336s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_msgs' with build type 'ament_cmake'
+[23.336s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_msgs'
+[23.337s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[23.337s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[23.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/teb_msgs': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/teb_msgs
+[26.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/teb_msgs' returned '0': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/teb_msgs
+[26.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/teb_msgs': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/allen/rm_ws/build/teb_msgs -- -j2 -l2
+[37.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/teb_msgs' returned '0': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/allen/rm_ws/build/teb_msgs -- -j2 -l2
+[37.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/teb_msgs': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/allen/rm_ws/build/teb_msgs
+[39.604s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teb_msgs)
+[39.604s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs' for CMake module files
+[39.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/teb_msgs' returned '0': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/allen/rm_ws/build/teb_msgs
+[39.605s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs' for CMake config files
+[39.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_msgs', 'cmake_prefix_path')
+[39.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/cmake_prefix_path.ps1'
+[39.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/cmake_prefix_path.dsv'
+[39.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/cmake_prefix_path.sh'
+[39.608s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/lib'
+[39.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_msgs', 'ld_library_path_lib')
+[39.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/ld_library_path_lib.ps1'
+[39.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/ld_library_path_lib.dsv'
+[39.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/ld_library_path_lib.sh'
+[39.609s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/bin'
+[39.609s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/lib/pkgconfig/teb_msgs.pc'
+[39.609s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/lib/python3.10/site-packages'
+[39.609s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/bin'
+[39.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.ps1'
+[39.612s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.dsv'
+[39.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.sh'
+[39.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.bash'
+[39.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.zsh'
+[39.613s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/teb_msgs/share/colcon-core/packages/teb_msgs)
+[39.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teb_msgs)
+[39.616s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs' for CMake module files
+[39.616s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs' for CMake config files
+[39.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_msgs', 'cmake_prefix_path')
+[39.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/cmake_prefix_path.ps1'
+[39.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/cmake_prefix_path.dsv'
+[39.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/cmake_prefix_path.sh'
+[39.624s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/lib'
+[39.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('teb_msgs', 'ld_library_path_lib')
+[39.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/ld_library_path_lib.ps1'
+[39.627s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/ld_library_path_lib.dsv'
+[39.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/hook/ld_library_path_lib.sh'
+[39.629s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/bin'
+[39.629s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/lib/pkgconfig/teb_msgs.pc'
+[39.629s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/lib/python3.10/site-packages'
+[39.629s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/teb_msgs/bin'
+[39.630s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.ps1'
+[39.630s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.dsv'
+[39.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.sh'
+[39.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.bash'
+[39.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/package.zsh'
+[39.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/teb_msgs/share/colcon-core/packages/teb_msgs)
+[39.637s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/allen/rm_ws/src/rm_nav_bringup' with build type 'ament_cmake'
+[39.637s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/allen/rm_ws/src/rm_nav_bringup'
+[39.637s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[39.637s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[39.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rm_nav_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_nav_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rm_nav_bringup
+[40.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rm_nav_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_nav_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rm_nav_bringup
+[40.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rm_nav_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rm_nav_bringup -- -j2 -l2
+[40.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rm_nav_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rm_nav_bringup -- -j2 -l2
+[40.933s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rm_nav_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rm_nav_bringup
+[42.101s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_nav_bringup)
+[42.104s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup' for CMake module files
+[42.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rm_nav_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rm_nav_bringup
+[42.106s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup' for CMake config files
+[42.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_nav_bringup', 'cmake_prefix_path')
+[42.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/hook/cmake_prefix_path.ps1'
+[42.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/hook/cmake_prefix_path.dsv'
+[42.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/hook/cmake_prefix_path.sh'
+[42.109s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup/bin'
+[42.109s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup/lib/pkgconfig/rm_nav_bringup.pc'
+[42.109s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup/lib/python3.10/site-packages'
+[42.110s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup/bin'
+[42.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.ps1'
+[42.110s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.dsv'
+[42.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.sh'
+[42.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.bash'
+[42.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.zsh'
+[42.113s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/rm_nav_bringup/share/colcon-core/packages/rm_nav_bringup)
+[42.114s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_nav_bringup)
+[42.114s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup' for CMake module files
+[42.115s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup' for CMake config files
+[42.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_nav_bringup', 'cmake_prefix_path')
+[42.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/hook/cmake_prefix_path.ps1'
+[42.119s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/hook/cmake_prefix_path.dsv'
+[42.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/hook/cmake_prefix_path.sh'
+[42.122s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup/bin'
+[42.122s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup/lib/pkgconfig/rm_nav_bringup.pc'
+[42.122s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup/lib/python3.10/site-packages'
+[42.122s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_nav_bringup/bin'
+[42.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.ps1'
+[42.123s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.dsv'
+[42.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.sh'
+[42.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.bash'
+[42.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.zsh'
+[42.127s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/rm_nav_bringup/share/colcon-core/packages/rm_nav_bringup)
+[42.130s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/allen/rm_ws/src/rm_navigation/rm_navigation' with build type 'ament_cmake'
+[42.130s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/allen/rm_ws/src/rm_navigation/rm_navigation'
+[42.130s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[42.130s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[42.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rm_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/rm_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rm_navigation
+[43.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/rm_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rm_navigation
+[43.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rm_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rm_navigation -- -j2 -l2
+[43.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rm_navigation -- -j2 -l2
+[43.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rm_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rm_navigation
+[43.942s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_navigation)
+[43.942s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation' for CMake module files
+[43.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rm_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rm_navigation
+[43.943s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation' for CMake config files
+[43.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_navigation', 'cmake_prefix_path')
+[43.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/hook/cmake_prefix_path.ps1'
+[43.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/hook/cmake_prefix_path.dsv'
+[43.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/hook/cmake_prefix_path.sh'
+[43.947s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation/bin'
+[43.947s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation/lib/pkgconfig/rm_navigation.pc'
+[43.947s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation/lib/python3.10/site-packages'
+[43.948s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation/bin'
+[43.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.ps1'
+[43.950s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.dsv'
+[43.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.sh'
+[43.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.bash'
+[43.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.zsh'
+[43.951s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/rm_navigation/share/colcon-core/packages/rm_navigation)
+[43.952s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_navigation)
+[43.952s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation' for CMake module files
+[43.953s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation' for CMake config files
+[43.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_navigation', 'cmake_prefix_path')
+[43.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/hook/cmake_prefix_path.ps1'
+[43.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/hook/cmake_prefix_path.dsv'
+[43.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/hook/cmake_prefix_path.sh'
+[43.960s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation/bin'
+[43.960s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation/lib/pkgconfig/rm_navigation.pc'
+[43.960s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation/lib/python3.10/site-packages'
+[43.960s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rm_navigation/bin'
+[43.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.ps1'
+[43.961s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.dsv'
+[43.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.sh'
+[43.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.bash'
+[43.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rm_navigation/share/rm_navigation/package.zsh'
+[43.965s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/rm_navigation/share/colcon-core/packages/rm_navigation)
+[43.967s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/allen/rm_ws/src/rmbot2' with build type 'ament_cmake'
+[43.967s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/allen/rm_ws/src/rmbot2'
+[43.967s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[43.967s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[43.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rmbot2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rmbot2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rmbot2
+[45.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rmbot2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rmbot2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rmbot2
+[45.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rmbot2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rmbot2 -- -j2 -l2
+[45.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rmbot2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rmbot2 -- -j2 -l2
+[45.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/allen/rm_ws/build/rmbot2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rmbot2
+[48.090s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rmbot2)
+[48.091s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rmbot2' for CMake module files
+[48.091s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rmbot2' for CMake config files
+[48.092s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/allen/rm_ws/build/rmbot2' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rmbot2
+[48.094s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rmbot2/bin'
+[48.094s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rmbot2/lib/pkgconfig/rmbot2.pc'
+[48.094s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rmbot2/lib/python3.10/site-packages'
+[48.094s] Level 1:colcon.colcon_core.environment:checking '/home/allen/rm_ws/install/rmbot2/bin'
+[48.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rmbot2/share/rmbot2/package.ps1'
+[48.098s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/allen/rm_ws/install/rmbot2/share/rmbot2/package.dsv'
+[48.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rmbot2/share/rmbot2/package.sh'
+[48.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rmbot2/share/rmbot2/package.bash'
+[48.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/allen/rm_ws/install/rmbot2/share/rmbot2/package.zsh'
+[48.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/allen/rm_ws/install/rmbot2/share/colcon-core/packages/rmbot2)
+[68.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[68.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[68.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[68.913s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[68.921s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[68.921s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[68.921s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[68.937s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[68.938s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/allen/rm_ws/install/local_setup.ps1'
+[68.940s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/allen/rm_ws/install/_local_setup_util_ps1.py'
+[68.941s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/allen/rm_ws/install/setup.ps1'
+[68.942s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/allen/rm_ws/install/local_setup.sh'
+[68.943s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/allen/rm_ws/install/_local_setup_util_sh.py'
+[68.944s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/allen/rm_ws/install/setup.sh'
+[68.944s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/allen/rm_ws/install/local_setup.bash'
+[68.945s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/allen/rm_ws/install/setup.bash'
+[68.946s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/allen/rm_ws/install/local_setup.zsh'
+[68.947s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/allen/rm_ws/install/setup.zsh'

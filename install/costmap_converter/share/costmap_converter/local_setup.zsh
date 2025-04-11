@@ -1,0 +1,1 @@
+/home/allen/rm_ws/build/costmap_converter/ament_cmake_environment_hooks/local_setup.zsh

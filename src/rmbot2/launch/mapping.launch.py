@@ -16,6 +16,12 @@ def generate_launch_description():
     fastlio_mid360_params = os.path.join(rmbot_dir, 'config', 'simulation', 'fastlio_mid360_sim.yaml')
     fastlio_rviz_cfg_dir = os.path.join(rmbot_dir, 'rviz', 'fastlio.rviz')
 
+    world = LaunchConfiguration('world')
+    use_sim_time = LaunchConfiguration('use_sim_time')
+    use_nav_rviz = LaunchConfiguration('nav_rviz')
+    slam_toolbox_mapping_file_dir = os.path.join(rmbot_dir, 'config', 'simulation', 'mapper_params_online_async_sim.yaml')
+
+
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         'use_sim_time',
         default_value='True',
@@ -45,14 +51,11 @@ def generate_launch_description():
     
     declare_mode_cmd = DeclareLaunchArgument(
         'mode',
-        default_value='',
+        default_value='mapping',
         description='Choose mode: nav, mapping')
 
 
-    world = LaunchConfiguration('world')
-    use_sim_time = LaunchConfiguration('use_sim_time')
-    use_nav_rviz = LaunchConfiguration('nav_rviz')
-    slam_toolbox_mapping_file_dir = os.path.join(rmbot_dir, 'config', 'simulation', 'mapper_params_online_async_sim.yaml')
+  
 
 
     mac_rm_simulation_launch_dir = os.path.join(get_package_share_directory('rmbot2'))
@@ -191,6 +194,7 @@ def generate_launch_description():
         }]
     )
 
+
     ld = LaunchDescription()
     ld.add_action(declare_LIO_cmd)
     ld.add_action(declare_use_sim_time_cmd)
@@ -208,7 +212,7 @@ def generate_launch_description():
 
     # ld.add_action(bringup_pointcloud_to_laserscan_node) 
 
-    ld.add_action(bringup_fake_vel_transform_node)
+    # ld.add_action(bringup_fake_vel_transform_node)
 
     ld.add_action(start_mapping)
     ld.add_action(start_navigation2)

@@ -1,0 +1,1 @@
+/home/allen/rm_ws/build/rmbot2/ament_cmake_environment_hooks/local_setup.bash

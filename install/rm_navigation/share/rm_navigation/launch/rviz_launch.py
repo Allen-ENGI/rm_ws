@@ -1,0 +1,1 @@
+/home/allen/rm_ws/src/rm_navigation/rm_navigation/launch/rviz_launch.py

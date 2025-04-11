@@ -1,0 +1,50 @@
+[35m[1mConsolidate compiler generated dependencies of target costmap_converter[0m
+[ 57%] Built target costmap_converter
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 68%] Built target gtest_main
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[ 78%] Built target gtest
+[35m[1mConsolidate compiler generated dependencies of target standalone_converter[0m
+[ 89%] Built target standalone_converter
+[35m[1mConsolidate compiler generated dependencies of target test_costmap_polygons[0m
+[100%] Built target test_costmap_polygons
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/lib/libcostmap_converter.so
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/bin/standalone_converter
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_converter_interface.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/background_subtractor.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/blob_detector.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Ctracker.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/HungarianAlg.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Kalman.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/README.md
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/defines.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_convex_hull.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_ransac.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons_concave.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/misc.h
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/library_path.sh
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/library_path.dsv
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter//costmap_converter_plugins.xml
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/ament_index/resource_index/package_run_dependencies/costmap_converter
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/ament_index/resource_index/parent_prefix_path/costmap_converter
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.sh
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.dsv
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/path.sh
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/path.dsv
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/local_setup.bash
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/local_setup.sh
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/local_setup.zsh
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/local_setup.dsv
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/package.dsv
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/ament_index/resource_index/packages/costmap_converter
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/ament_index/resource_index/costmap_converter__pluginlib__plugin/costmap_converter
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig.cmake
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig-version.cmake
+-- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/package.xml

@@ -1,0 +1,123 @@
+[0.018s] Invoking command in '/home/allen/rm_ws/build/teb_local_planner': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PATH=/home/allen/rm_ws/install/costmap_converter/bin:${PATH} PYTHONPATH=/home/allen/rm_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_local_planner -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/teb_local_planner
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.142s] -- The CXX compiler identification is GNU 11.4.0
+[0.152s] -- Detecting C compiler ABI info
+[0.239s] -- Detecting C compiler ABI info - done
+[0.245s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.245s] -- Detecting C compile features
+[0.245s] -- Detecting C compile features - done
+[0.248s] -- Detecting CXX compiler ABI info
+[0.339s] -- Detecting CXX compiler ABI info - done
+[0.344s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.345s] -- Detecting CXX compile features
+[0.345s] -- Detecting CXX compile features - done
+[0.348s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.488s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.543s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.575s] -- Found costmap_converter: 0.1.2 (/home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake)
+[0.626s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.632s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.644s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.652s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.664s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.801s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.804s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.824s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.833s] -- Looking for pthread.h
+[0.918s] -- Looking for pthread.h - found
+[0.918s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.002s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.004s] -- Found Threads: TRUE  
+[1.187s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.188s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.303s] -- Found dwb_critics: 1.1.17 (/opt/ros/humble/share/dwb_critics/cmake)
+[1.431s] -- Found teb_msgs: 0.0.1 (/home/allen/rm_ws/install/teb_msgs/share/teb_msgs/cmake)
+[1.448s] -- Found tf2_eigen: 0.25.11 (/opt/ros/humble/share/tf2_eigen/cmake)
+[1.454s] -- System: Linux-6.8.0-57-generic
+[1.454s] -- /opt/ros/humble/share/tinyxml2_vendor/cmake/Modules;/opt/ros/humble/share/eigen3_cmake_module/cmake/Modules;/opt/ros/humble/share/fastrtps_cmake_module/cmake/Modules;/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_hoofs;/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_hoofs;/opt/ros/humble/lib/x86_64-linux-gnu/cmake/iceoryx_posh;/home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_local_planner/cmake_modules
+[1.461s] -- Found SuiteSparse
+[1.461s] -- Searching for g2o ...
+[1.461s] -- Found g2o headers in: /opt/ros/humble/include/g2o
+[1.462s] -- Found libg2o: /opt/ros/humble/lib/x86_64-linux-gnu/libg2o_csparse_extension.so;/opt/ros/humble/lib/x86_64-linux-gnu/libg2o_core.so;/opt/ros/humble/lib/x86_64-linux-gnu/libg2o_stuff.so;/opt/ros/humble/lib/x86_64-linux-gnu/libg2o_types_slam2d.so;/opt/ros/humble/lib/x86_64-linux-gnu/libg2o_types_slam3d.so;/opt/ros/humble/lib/x86_64-linux-gnu/libg2o_solver_cholmod.so;/opt/ros/humble/lib/x86_64-linux-gnu/libg2o_solver_pcg.so;/opt/ros/humble/lib/x86_64-linux-gnu/libg2o_solver_csparse.so;/opt/ros/humble/lib/x86_64-linux-gnu/libg2o_incremental.so
+[1.480s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  
+[3.572s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.634s] -- Configuring done
+[3.726s] -- Generating done
+[3.734s] -- Build files have been written to: /home/allen/rm_ws/build/teb_local_planner
+[3.749s] Invoked command in '/home/allen/rm_ws/build/teb_local_planner' returned '0': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PATH=/home/allen/rm_ws/install/costmap_converter/bin:${PATH} PYTHONPATH=/home/allen/rm_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_local_planner -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/teb_local_planner
+[3.749s] Invoking command in '/home/allen/rm_ws/build/teb_local_planner': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PATH=/home/allen/rm_ws/install/costmap_converter/bin:${PATH} PYTHONPATH=/home/allen/rm_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/allen/rm_ws/build/teb_local_planner -- -j2 -l2
+[3.817s] [ 20%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/optimal_planner.cpp.o[0m
+[3.817s] [ 20%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/timed_elastic_band.cpp.o[0m
+[12.607s] [ 30%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/obstacles.cpp.o[0m
+[15.013s] [ 40%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/visualization.cpp.o[0m
+[32.955s] [ 50%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/recovery_behaviors.cpp.o[0m
+[35.992s] [ 60%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/teb_config.cpp.o[0m
+[39.472s] [ 70%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/homotopy_class_planner.cpp.o[0m
+[49.274s] [ 80%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/teb_local_planner_ros.cpp.o[0m
+[57.670s] [ 90%] [32mBuilding CXX object CMakeFiles/teb_local_planner.dir/src/graph_search.cpp.o[0m
+[85.489s] [100%] [32m[1mLinking CXX shared library libteb_local_planner.so[0m
+[85.959s] [100%] Built target teb_local_planner
+[85.972s] Invoked command in '/home/allen/rm_ws/build/teb_local_planner' returned '0': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PATH=/home/allen/rm_ws/install/costmap_converter/bin:${PATH} PYTHONPATH=/home/allen/rm_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/allen/rm_ws/build/teb_local_planner -- -j2 -l2
+[85.974s] Invoking command in '/home/allen/rm_ws/build/teb_local_planner': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PATH=/home/allen/rm_ws/install/costmap_converter/bin:${PATH} PYTHONPATH=/home/allen/rm_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/allen/rm_ws/build/teb_local_planner
+[85.983s] -- Install configuration: "Release"
+[85.983s] -- Execute custom install script
+[85.984s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/lib/libteb_local_planner.so
+[85.995s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/distance_calculations.h
+[86.004s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/equivalence_relations.h
+[86.015s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/base_teb_edges.h
+[86.025s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_acceleration.h
+[86.034s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_dynamic_obstacle.h
+[86.046s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_kinematics.h
+[86.057s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_obstacle.h
+[86.069s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_prefer_rotdir.h
+[86.080s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_shortest_path.h
+[86.090s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_time_optimal.h
+[86.100s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_velocity.h
+[86.111s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_velocity_obstacle_ratio.h
+[86.120s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/edge_via_point.h
+[86.130s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/penalties.h
+[86.142s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/vertex_pose.h
+[86.151s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/g2o_types/vertex_timediff.h
+[86.161s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/graph_search.h
+[86.172s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/h_signature.h
+[86.183s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/homotopy_class_planner.h
+[86.193s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/homotopy_class_planner.hpp
+[86.204s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/misc.h
+[86.214s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/obstacles.h
+[86.225s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/optimal_planner.h
+[86.235s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/planner_interface.h
+[86.245s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/pose_se2.h
+[86.259s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/recovery_behaviors.h
+[86.269s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/robot_footprint_model.h
+[86.280s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/teb_config.h
+[86.290s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/teb_local_planner_ros.h
+[86.300s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/timed_elastic_band.h
+[86.311s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/timed_elastic_band.hpp
+[86.321s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/visualization.h
+[86.331s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/include//teb_local_planner/visualization.hpp
+[86.341s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner_plugin.xml
+[86.352s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/lib/teb_local_planner/cmd_vel_to_ackermann_drive.py
+[86.363s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/params/teb_params.yaml
+[86.375s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/environment/library_path.sh
+[86.385s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/environment/library_path.dsv
+[86.396s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner//teb_local_planner_plugin.xml
+[86.406s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/ament_index/resource_index/package_run_dependencies/teb_local_planner
+[86.417s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/ament_index/resource_index/parent_prefix_path/teb_local_planner
+[86.427s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/environment/ament_prefix_path.sh
+[86.438s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/environment/ament_prefix_path.dsv
+[86.448s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/environment/path.sh
+[86.460s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/environment/path.dsv
+[86.471s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/local_setup.bash
+[86.482s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/local_setup.sh
+[86.493s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/local_setup.zsh
+[86.503s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/local_setup.dsv
+[86.516s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/package.dsv
+[86.527s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/ament_index/resource_index/packages/teb_local_planner
+[86.539s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/ament_index/resource_index/nav2_core__pluginlib__plugin/teb_local_planner
+[86.549s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/cmake/ament_cmake_export_include_directories-extras.cmake
+[86.562s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/cmake/ament_cmake_export_libraries-extras.cmake
+[86.573s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/cmake/ament_cmake_export_dependencies-extras.cmake
+[86.583s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/cmake/teb_local_plannerConfig.cmake
+[86.593s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/cmake/teb_local_plannerConfig-version.cmake
+[86.604s] -- Symlinking: /home/allen/rm_ws/install/teb_local_planner/share/teb_local_planner/package.xml
+[86.617s] Invoked command in '/home/allen/rm_ws/build/teb_local_planner' returned '0': AMENT_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib PATH=/home/allen/rm_ws/install/costmap_converter/bin:${PATH} PYTHONPATH=/home/allen/rm_ws/install/teb_msgs/local/lib/python3.10/dist-packages:/home/allen/rm_ws/install/costmap_converter_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/allen/rm_ws/build/teb_local_planner
