@@ -1,0 +1,539 @@
+[0.000000] (-) TimerEvent: {}
+[0.000367] (-) JobUnselected: {'identifier': 'costmap_converter'}
+[0.000429] (-) JobUnselected: {'identifier': 'costmap_converter_msgs'}
+[0.000463] (-) JobUnselected: {'identifier': 'fake_vel_transform'}
+[0.000581] (-) JobUnselected: {'identifier': 'rm_nav_bringup'}
+[0.000618] (-) JobUnselected: {'identifier': 'rm_navigation'}
+[0.000651] (-) JobUnselected: {'identifier': 'rmbot2'}
+[0.000682] (-) JobUnselected: {'identifier': 'teb_local_planner'}
+[0.000734] (-) JobUnselected: {'identifier': 'teb_msgs'}
+[0.000768] (rmoss_gz_plugins) JobQueued: {'identifier': 'rmoss_gz_plugins', 'dependencies': OrderedDict()}
+[0.000803] (rmoss_gz_plugins) JobStarted: {'identifier': 'rmoss_gz_plugins'}
+[0.016419] (rmoss_gz_plugins) JobProgress: {'identifier': 'rmoss_gz_plugins', 'progress': 'cmake'}
+[0.016944] (rmoss_gz_plugins) Command: {'cmd': ['/usr/bin/cmake', '/home/allen/rm_ws/src/rmoss_gz_plugins', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rmoss_gz_plugins'], 'cwd': '/home/allen/rm_ws/build/rmoss_gz_plugins', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en_CA:en'), ('USER', 'allen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib::/usr/local/lib'), ('HOME', '/home/allen'), ('OLDPWD', '/home/allen/rm_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1831'), ('SYSTEMD_EXEC_PID', '2010'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4911'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'allen'), ('JOURNAL_STREAM', '8:26763'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'allen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/allen-virtual-machine:@/tmp/.ICE-unix/1982,unix/allen-virtual-machine:/tmp/.ICE-unix/1982'), ('INVOCATION_ID', '296f8ce18cf147aeb6d3dbea7bd919ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H69Y42'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0ef6e54a-9d40-41bf-9e39-b17bf5d437c4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/allen/rm_ws/build/rmoss_gz_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098838] (-) TimerEvent: {}
+[0.138783] (rmoss_gz_plugins) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199755] (-) TimerEvent: {}
+[0.246617] (rmoss_gz_plugins) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.259766] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300082] (-) TimerEvent: {}
+[0.400676] (-) TimerEvent: {}
+[0.417402] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.423054] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.423894] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.424250] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.428275] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.501250] (-) TimerEvent: {}
+[0.602239] (-) TimerEvent: {}
+[0.614014] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.620060] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.621172] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.622779] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.627911] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.703798] (-) TimerEvent: {}
+[0.804814] (-) TimerEvent: {}
+[0.845598] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.905786] (-) TimerEvent: {}
+[0.922681] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.969460] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[0.978871] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs8\n'}
+[1.006833] (-) TimerEvent: {}
+[1.107702] (-) TimerEvent: {}
+[1.208646] (-) TimerEvent: {}
+[1.309648] (-) TimerEvent: {}
+[1.357447] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.359069] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.360198] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.372422] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.403999] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.410104] (-) TimerEvent: {}
+[1.483826] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[1.484824] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11\n'}
+[1.510631] (-) TimerEvent: {}
+[1.512093] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.528430] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.539536] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.572154] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.611053] (-) TimerEvent: {}
+[1.663795] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.674819] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.705730] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.711787] (-) TimerEvent: {}
+[1.789761] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[1.794007] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.794182] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1\n'}
+[1.794785] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-utils1> component [cli]\n'}
+[1.797840] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-utils1-cli -- found version 1.5.1\n'}
+[1.799872] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1-cli\n'}
+[1.799983] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[1.804574] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-gazebo6 -- found version 6.17.0\n'}
+[1.805235] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gazebo6\n'}
+[1.808190] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[1.808884] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of sdformat12\n'}
+[1.812680] (-) TimerEvent: {}
+[1.826774] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.827465] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[1.831359] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.832180] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[1.832903] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [loader]\n'}
+[1.836046] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-plugin1-loader -- found version 1.4.0\n'}
+[1.836842] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-loader\n'}
+[1.837551] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [register]\n'}
+[1.840475] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-plugin1-register -- found version 1.4.0\n'}
+[1.841241] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-register\n'}
+[1.842289] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[1.842999] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11\n'}
+[1.888744] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.898663] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.913937] (-) TimerEvent: {}
+[1.931035] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.014981] (-) TimerEvent: {}
+[2.045891] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[2.047962] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.048082] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [log]\n'}
+[2.050399] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport11-log -- found version 11.4.1\n'}
+[2.050913] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-log\n'}
+[2.051662] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [parameters]\n'}
+[2.055049] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport11-parameters -- found version 11.4.1\n'}
+[2.055687] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-parameters\n'}
+[2.057420] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.060647] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.061316] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[2.061854] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.063100] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.064657] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.080740] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [profiler]\n'}
+[2.085086] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4-profiler -- found version 4.7.0\n'}
+[2.085244] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-profiler\n'}
+[2.085714] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[2.089043] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4-events -- found version 4.7.0\n'}
+[2.089698] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-events\n'}
+[2.090266] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.091061] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [av]\n'}
+[2.094146] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4-av -- found version 4.7.0\n'}
+[2.094830] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-av\n'}
+[2.107578] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[2.116218] (-) TimerEvent: {}
+[2.140819] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[2.217731] (-) TimerEvent: {}
+[2.229765] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[2.240874] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[2.274075] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[2.318113] (-) TimerEvent: {}
+[2.380071] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[2.394690] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[2.418810] (-) TimerEvent: {}
+[2.433345] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[2.519366] (-) TimerEvent: {}
+[2.533784] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[2.543541] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[2.578836] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[2.620439] (-) TimerEvent: {}
+[2.676623] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[2.687743] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[2.722742] (-) TimerEvent: {}
+[2.725490] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[2.821432] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[2.823426] (-) TimerEvent: {}
+[2.825791] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools7 -- found version 7.3.1\n'}
+[2.829203] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools7\n'}
+[2.924009] (-) TimerEvent: {}
+[3.022053] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[3.024231] (-) TimerEvent: {}
+[3.039973] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[3.076398] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[3.124796] (-) TimerEvent: {}
+[3.170706] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[3.183983] (rmoss_gz_plugins) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[3.221921] (rmoss_gz_plugins) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[3.225928] (-) TimerEvent: {}
+[3.321896] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[3.322532] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.323363] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.324247] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[3.326611] (-) TimerEvent: {}
+[3.329033] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-gui6 -- found version 6.8.0\n'}
+[3.329963] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gui6\n'}
+[3.361144] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[3.378622] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.379181] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.379800] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[3.380352] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[3.384772] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[3.384904] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-rendering6\n'}
+[3.385007] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.385558] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[3.385885] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-math6> component [eigen3]\n'}
+[3.388877] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6-eigen3 -- found version 6.15.1\n'}
+[3.389382] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6-eigen3\n'}
+[3.400058] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.400583] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[3.400886] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[3.400983] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[3.418663] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [graphics]\n'}
+[3.423850] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4-graphics -- found version 4.7.0\n'}
+[3.423980] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-graphics\n'}
+[3.424086] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.424189] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[3.425282] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[3.426879] (-) TimerEvent: {}
+[3.428368] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[3.428745] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[3.429465] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [all]\n'}
+[3.432861] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for all libraries of ignition-plugin1 -- found version 1.4.0\n'}
+[3.435435] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[3.437553] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[3.471519] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-physics5 -- found version 5.3.2\n'}
+[3.471790] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5\n'}
+[3.472270] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.472715] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[3.473306] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[3.474946] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [heightmap]\n'}
+[3.478061] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-physics5-heightmap -- found version 5.3.2\n'}
+[3.478834] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-heightmap\n'}
+[3.479351] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.479898] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [mesh]\n'}
+[3.483010] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-physics5-mesh -- found version 5.3.2\n'}
+[3.483756] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-mesh\n'}
+[3.484930] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.485045] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [sdf]\n'}
+[3.487852] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-physics5-sdf -- found version 5.3.2\n'}
+[3.489931] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-sdf\n'}
+[3.490043] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[3.492364] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.1\n'}
+[3.493145] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6\n'}
+[3.523826] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[3.525381] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.526099] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.526799] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[3.526906] (-) TimerEvent: {}
+[3.527544] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[3.528222] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[3.528886] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[3.529817] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [air_pressure]\n'}
+[3.533559] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-air_pressure -- found version 6.8.1\n'}
+[3.534409] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-air_pressure\n'}
+[3.535052] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [altimeter]\n'}
+[3.537968] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-altimeter -- found version 6.8.1\n'}
+[3.538773] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-altimeter\n'}
+[3.539450] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [imu]\n'}
+[3.542521] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-imu -- found version 6.8.1\n'}
+[3.543407] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-imu\n'}
+[3.544482] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [force_torque]\n'}
+[3.547705] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-force_torque -- found version 6.8.1\n'}
+[3.548422] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-force_torque\n'}
+[3.549139] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [logical_camera]\n'}
+[3.554909] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-logical_camera -- found version 6.8.1\n'}
+[3.555088] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-logical_camera\n'}
+[3.555188] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [magnetometer]\n'}
+[3.557954] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-magnetometer -- found version 6.8.1\n'}
+[3.558746] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-magnetometer\n'}
+[3.559433] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [navsat]\n'}
+[3.563558] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-navsat -- found version 6.8.1\n'}
+[3.563712] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-navsat\n'}
+[3.566252] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rendering]\n'}
+[3.569248] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rendering -- found version 6.8.1\n'}
+[3.569955] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rendering\n'}
+[3.570850] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [lidar]\n'}
+[3.574796] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-lidar -- found version 6.8.1\n'}
+[3.575076] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-lidar\n'}
+[3.575640] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.1\n'}
+[3.575989] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [gpu_lidar]\n'}
+[3.579201] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.1\n'}
+[3.580089] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-gpu_lidar\n'}
+[3.580553] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.1\n'}
+[3.581321] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [camera]\n'}
+[3.584601] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-camera -- found version 6.8.1\n'}
+[3.585170] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-camera\n'}
+[3.585865] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.1\n'}
+[3.586637] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [boundingbox_camera]\n'}
+[3.589789] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.1\n'}
+[3.590614] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-boundingbox_camera\n'}
+[3.591379] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [segmentation_camera]\n'}
+[3.594832] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.1\n'}
+[3.595327] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-segmentation_camera\n'}
+[3.595894] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [depth_camera]\n'}
+[3.598831] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-depth_camera -- found version 6.8.1\n'}
+[3.600762] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-depth_camera\n'}
+[3.600884] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.1\n'}
+[3.600977] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rgbd_camera]\n'}
+[3.606356] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.1\n'}
+[3.606682] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rgbd_camera\n'}
+[3.606839] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.1\n'}
+[3.606972] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [thermal_camera]\n'}
+[3.608359] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6-thermal_camera -- found version 6.8.1\n'}
+[3.609151] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-thermal_camera\n'}
+[3.610786] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.1\n'}
+[3.612610] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[3.613136] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.616872] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[3.627499] (-) TimerEvent: {}
+[3.728104] (-) TimerEvent: {}
+[3.744660] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.811031] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[3.819767] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Build files have been written to: /home/allen/rm_ws/build/rmoss_gz_plugins\n'}
+[3.828457] (-) TimerEvent: {}
+[3.837905] (rmoss_gz_plugins) CommandEnded: {'returncode': 0}
+[3.838994] (rmoss_gz_plugins) JobProgress: {'identifier': 'rmoss_gz_plugins', 'progress': 'build'}
+[3.842929] (rmoss_gz_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/allen/rm_ws/build/rmoss_gz_plugins', '--', '-j2', '-l2'], 'cwd': '/home/allen/rm_ws/build/rmoss_gz_plugins', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en_CA:en'), ('USER', 'allen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib::/usr/local/lib'), ('HOME', '/home/allen'), ('OLDPWD', '/home/allen/rm_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1831'), ('SYSTEMD_EXEC_PID', '2010'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4911'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'allen'), ('JOURNAL_STREAM', '8:26763'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'allen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/allen-virtual-machine:@/tmp/.ICE-unix/1982,unix/allen-virtual-machine:/tmp/.ICE-unix/1982'), ('INVOCATION_ID', '296f8ce18cf147aeb6d3dbea7bd919ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H69Y42'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0ef6e54a-9d40-41bf-9e39-b17bf5d437c4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/allen/rm_ws/build/rmoss_gz_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.930623] (-) TimerEvent: {}
+[3.975488] (rmoss_gz_plugins) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/ProjectileShooter.dir/plugins/projectile_shooter/ProjectileShooter.cc.o\x1b[0m\n'}
+[3.976091] (rmoss_gz_plugins) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/MecanumDrive2.dir/plugins/mecanum_drive2/MecanumDrive2.cc.o\x1b[0m\n'}
+[4.031185] (-) TimerEvent: {}
+[4.133822] (-) TimerEvent: {}
+[4.234802] (-) TimerEvent: {}
+[4.336972] (-) TimerEvent: {}
+[4.439131] (-) TimerEvent: {}
+[4.542566] (-) TimerEvent: {}
+[4.643690] (-) TimerEvent: {}
+[4.744766] (-) TimerEvent: {}
+[4.845461] (-) TimerEvent: {}
+[4.946181] (-) TimerEvent: {}
+[5.046754] (-) TimerEvent: {}
+[5.148695] (-) TimerEvent: {}
+[5.249510] (-) TimerEvent: {}
+[5.350478] (-) TimerEvent: {}
+[5.450926] (-) TimerEvent: {}
+[5.552599] (-) TimerEvent: {}
+[5.655007] (-) TimerEvent: {}
+[5.755788] (-) TimerEvent: {}
+[5.856402] (-) TimerEvent: {}
+[5.956812] (-) TimerEvent: {}
+[6.057598] (-) TimerEvent: {}
+[6.159965] (-) TimerEvent: {}
+[6.260510] (-) TimerEvent: {}
+[6.361163] (-) TimerEvent: {}
+[6.462126] (-) TimerEvent: {}
+[6.564366] (-) TimerEvent: {}
+[6.665066] (-) TimerEvent: {}
+[6.765746] (-) TimerEvent: {}
+[6.868654] (-) TimerEvent: {}
+[6.969344] (-) TimerEvent: {}
+[7.070082] (-) TimerEvent: {}
+[7.170708] (-) TimerEvent: {}
+[7.272922] (-) TimerEvent: {}
+[7.373765] (-) TimerEvent: {}
+[7.474659] (-) TimerEvent: {}
+[7.575210] (-) TimerEvent: {}
+[7.675764] (-) TimerEvent: {}
+[7.777237] (-) TimerEvent: {}
+[7.879549] (-) TimerEvent: {}
+[7.980310] (-) TimerEvent: {}
+[8.080909] (-) TimerEvent: {}
+[8.181883] (-) TimerEvent: {}
+[8.282540] (-) TimerEvent: {}
+[8.383226] (-) TimerEvent: {}
+[8.486140] (-) TimerEvent: {}
+[8.587278] (-) TimerEvent: {}
+[8.688104] (-) TimerEvent: {}
+[8.789819] (-) TimerEvent: {}
+[8.890498] (-) TimerEvent: {}
+[8.991197] (-) TimerEvent: {}
+[9.093579] (-) TimerEvent: {}
+[9.194255] (-) TimerEvent: {}
+[9.294976] (-) TimerEvent: {}
+[9.395614] (-) TimerEvent: {}
+[9.498033] (-) TimerEvent: {}
+[9.598873] (-) TimerEvent: {}
+[9.699556] (-) TimerEvent: {}
+[9.800151] (-) TimerEvent: {}
+[9.902684] (-) TimerEvent: {}
+[10.003862] (-) TimerEvent: {}
+[10.104596] (-) TimerEvent: {}
+[10.205554] (-) TimerEvent: {}
+[10.306418] (-) TimerEvent: {}
+[10.407489] (-) TimerEvent: {}
+[10.509660] (-) TimerEvent: {}
+[10.610522] (-) TimerEvent: {}
+[10.711150] (-) TimerEvent: {}
+[10.811917] (-) TimerEvent: {}
+[10.914567] (-) TimerEvent: {}
+[11.015523] (-) TimerEvent: {}
+[11.116503] (-) TimerEvent: {}
+[11.217077] (-) TimerEvent: {}
+[11.319705] (-) TimerEvent: {}
+[11.420477] (-) TimerEvent: {}
+[11.521439] (-) TimerEvent: {}
+[11.622513] (-) TimerEvent: {}
+[11.723268] (-) TimerEvent: {}
+[11.823911] (-) TimerEvent: {}
+[11.926557] (-) TimerEvent: {}
+[12.027515] (-) TimerEvent: {}
+[12.128419] (-) TimerEvent: {}
+[12.229433] (-) TimerEvent: {}
+[12.329967] (-) TimerEvent: {}
+[12.433185] (-) TimerEvent: {}
+[12.534107] (-) TimerEvent: {}
+[12.637317] (-) TimerEvent: {}
+[12.738197] (-) TimerEvent: {}
+[12.838893] (-) TimerEvent: {}
+[12.939686] (-) TimerEvent: {}
+[13.040589] (-) TimerEvent: {}
+[13.141994] (-) TimerEvent: {}
+[13.243435] (-) TimerEvent: {}
+[13.344248] (-) TimerEvent: {}
+[13.445019] (-) TimerEvent: {}
+[13.546666] (-) TimerEvent: {}
+[13.647674] (-) TimerEvent: {}
+[13.748353] (-) TimerEvent: {}
+[13.850338] (-) TimerEvent: {}
+[13.950988] (-) TimerEvent: {}
+[13.990016] (rmoss_gz_plugins) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libMecanumDrive2.so\x1b[0m\n'}
+[14.052769] (-) TimerEvent: {}
+[14.153752] (-) TimerEvent: {}
+[14.256607] (-) TimerEvent: {}
+[14.357958] (-) TimerEvent: {}
+[14.458528] (-) TimerEvent: {}
+[14.559251] (-) TimerEvent: {}
+[14.659963] (-) TimerEvent: {}
+[14.760710] (-) TimerEvent: {}
+[14.802903] (rmoss_gz_plugins) StdoutLine: {'line': b'[ 50%] Built target MecanumDrive2\n'}
+[14.861034] (-) TimerEvent: {}
+[14.862404] (rmoss_gz_plugins) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/LightBarController.dir/plugins/light_bar_controller/LightBarController.cc.o\x1b[0m\n'}
+[14.962516] (-) TimerEvent: {}
+[15.065166] (-) TimerEvent: {}
+[15.166235] (-) TimerEvent: {}
+[15.266930] (-) TimerEvent: {}
+[15.367495] (-) TimerEvent: {}
+[15.470500] (-) TimerEvent: {}
+[15.571402] (-) TimerEvent: {}
+[15.671771] (-) TimerEvent: {}
+[15.747322] (rmoss_gz_plugins) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libProjectileShooter.so\x1b[0m\n'}
+[15.772370] (-) TimerEvent: {}
+[15.874685] (-) TimerEvent: {}
+[15.975726] (-) TimerEvent: {}
+[16.077373] (-) TimerEvent: {}
+[16.179586] (-) TimerEvent: {}
+[16.280460] (-) TimerEvent: {}
+[16.382257] (-) TimerEvent: {}
+[16.483443] (-) TimerEvent: {}
+[16.584696] (-) TimerEvent: {}
+[16.687294] (-) TimerEvent: {}
+[16.699359] (rmoss_gz_plugins) StdoutLine: {'line': b'[ 83%] Built target ProjectileShooter\n'}
+[16.787521] (-) TimerEvent: {}
+[16.889091] (-) TimerEvent: {}
+[16.989742] (-) TimerEvent: {}
+[17.091111] (-) TimerEvent: {}
+[17.191672] (-) TimerEvent: {}
+[17.293369] (-) TimerEvent: {}
+[17.394223] (-) TimerEvent: {}
+[17.498577] (-) TimerEvent: {}
+[17.602365] (-) TimerEvent: {}
+[17.702998] (-) TimerEvent: {}
+[17.803598] (-) TimerEvent: {}
+[17.904694] (-) TimerEvent: {}
+[18.005390] (-) TimerEvent: {}
+[18.106616] (-) TimerEvent: {}
+[18.207247] (-) TimerEvent: {}
+[18.307794] (-) TimerEvent: {}
+[18.409275] (-) TimerEvent: {}
+[18.511149] (-) TimerEvent: {}
+[18.612413] (-) TimerEvent: {}
+[18.713868] (-) TimerEvent: {}
+[18.815259] (-) TimerEvent: {}
+[18.916285] (-) TimerEvent: {}
+[19.017465] (-) TimerEvent: {}
+[19.119848] (-) TimerEvent: {}
+[19.220949] (-) TimerEvent: {}
+[19.321924] (-) TimerEvent: {}
+[19.423343] (-) TimerEvent: {}
+[19.524404] (-) TimerEvent: {}
+[19.625582] (-) TimerEvent: {}
+[19.726541] (-) TimerEvent: {}
+[19.827804] (-) TimerEvent: {}
+[19.929225] (-) TimerEvent: {}
+[20.030327] (-) TimerEvent: {}
+[20.131110] (-) TimerEvent: {}
+[20.232594] (-) TimerEvent: {}
+[20.333836] (-) TimerEvent: {}
+[20.435192] (-) TimerEvent: {}
+[20.536385] (-) TimerEvent: {}
+[20.637383] (-) TimerEvent: {}
+[20.738750] (-) TimerEvent: {}
+[20.840360] (-) TimerEvent: {}
+[20.941674] (-) TimerEvent: {}
+[21.043075] (-) TimerEvent: {}
+[21.143909] (-) TimerEvent: {}
+[21.245533] (-) TimerEvent: {}
+[21.346141] (-) TimerEvent: {}
+[21.447633] (-) TimerEvent: {}
+[21.548569] (-) TimerEvent: {}
+[21.649193] (-) TimerEvent: {}
+[21.750217] (-) TimerEvent: {}
+[21.851146] (-) TimerEvent: {}
+[21.952430] (-) TimerEvent: {}
+[22.053498] (-) TimerEvent: {}
+[22.154501] (-) TimerEvent: {}
+[22.255391] (-) TimerEvent: {}
+[22.356483] (-) TimerEvent: {}
+[22.457722] (-) TimerEvent: {}
+[22.559002] (-) TimerEvent: {}
+[22.659802] (-) TimerEvent: {}
+[22.761464] (-) TimerEvent: {}
+[22.862365] (-) TimerEvent: {}
+[22.963100] (-) TimerEvent: {}
+[23.063928] (-) TimerEvent: {}
+[23.166334] (-) TimerEvent: {}
+[23.267723] (-) TimerEvent: {}
+[23.368545] (-) TimerEvent: {}
+[23.469932] (-) TimerEvent: {}
+[23.571518] (-) TimerEvent: {}
+[23.672772] (-) TimerEvent: {}
+[23.773807] (-) TimerEvent: {}
+[23.874694] (-) TimerEvent: {}
+[23.975599] (-) TimerEvent: {}
+[24.076590] (-) TimerEvent: {}
+[24.177165] (-) TimerEvent: {}
+[24.277876] (-) TimerEvent: {}
+[24.378666] (-) TimerEvent: {}
+[24.479895] (-) TimerEvent: {}
+[24.580886] (-) TimerEvent: {}
+[24.682173] (-) TimerEvent: {}
+[24.784362] (-) TimerEvent: {}
+[24.885394] (-) TimerEvent: {}
+[24.986292] (-) TimerEvent: {}
+[25.086943] (-) TimerEvent: {}
+[25.187532] (-) TimerEvent: {}
+[25.288511] (-) TimerEvent: {}
+[25.389394] (-) TimerEvent: {}
+[25.397951] (rmoss_gz_plugins) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libLightBarController.so\x1b[0m\n'}
+[25.490633] (-) TimerEvent: {}
+[25.591716] (-) TimerEvent: {}
+[25.692628] (-) TimerEvent: {}
+[25.793842] (-) TimerEvent: {}
+[25.894812] (-) TimerEvent: {}
+[25.995801] (-) TimerEvent: {}
+[26.097079] (-) TimerEvent: {}
+[26.106825] (rmoss_gz_plugins) StdoutLine: {'line': b'[100%] Built target LightBarController\n'}
+[26.134676] (rmoss_gz_plugins) CommandEnded: {'returncode': 0}
+[26.135133] (rmoss_gz_plugins) JobProgress: {'identifier': 'rmoss_gz_plugins', 'progress': 'install'}
+[26.158647] (rmoss_gz_plugins) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/allen/rm_ws/build/rmoss_gz_plugins'], 'cwd': '/home/allen/rm_ws/build/rmoss_gz_plugins', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en_CA:en'), ('USER', 'allen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib::/usr/local/lib'), ('HOME', '/home/allen'), ('OLDPWD', '/home/allen/rm_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1831'), ('SYSTEMD_EXEC_PID', '2010'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4911'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'allen'), ('JOURNAL_STREAM', '8:26763'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'allen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/allen-virtual-machine:@/tmp/.ICE-unix/1982,unix/allen-virtual-machine:/tmp/.ICE-unix/1982'), ('INVOCATION_ID', '296f8ce18cf147aeb6d3dbea7bd919ee'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H69Y42'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0ef6e54a-9d40-41bf-9e39-b17bf5d437c4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/allen/rm_ws/build/rmoss_gz_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[26.177729] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.178357] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[26.179206] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/plugins/libMecanumDrive2.so\n'}
+[26.197924] (-) TimerEvent: {}
+[26.202085] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/plugins/libProjectileShooter.so\n'}
+[26.224058] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/plugins/libLightBarController.so\n'}
+[26.247184] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/environment/gazebo.dsv\n'}
+[26.268348] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/ament_index/resource_index/package_run_dependencies/rmoss_gz_plugins\n'}
+[26.292536] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/ament_index/resource_index/parent_prefix_path/rmoss_gz_plugins\n'}
+[26.298511] (-) TimerEvent: {}
+[26.314304] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/environment/ament_prefix_path.sh\n'}
+[26.337003] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/environment/ament_prefix_path.dsv\n'}
+[26.358910] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/environment/path.sh\n'}
+[26.386547] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/environment/path.dsv\n'}
+[26.399220] (-) TimerEvent: {}
+[26.410637] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/local_setup.bash\n'}
+[26.435088] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/local_setup.sh\n'}
+[26.461680] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/local_setup.zsh\n'}
+[26.495232] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/local_setup.dsv\n'}
+[26.500656] (-) TimerEvent: {}
+[26.520068] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/package.dsv\n'}
+[26.544625] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/ament_index/resource_index/packages/rmoss_gz_plugins\n'}
+[26.568784] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/cmake/rmoss_gz_pluginsConfig.cmake\n'}
+[26.593567] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/cmake/rmoss_gz_pluginsConfig-version.cmake\n'}
+[26.602023] (-) TimerEvent: {}
+[26.618019] (rmoss_gz_plugins) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmoss_gz_plugins/share/rmoss_gz_plugins/package.xml\n'}
+[26.644064] (rmoss_gz_plugins) CommandEnded: {'returncode': 0}
+[26.665385] (rmoss_gz_plugins) JobEnded: {'identifier': 'rmoss_gz_plugins', 'rc': 0}
+[26.667405] (-) EventReactorShutdown: {}

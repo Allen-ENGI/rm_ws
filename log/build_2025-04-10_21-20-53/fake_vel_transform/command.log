@@ -1,4 +1,0 @@
-Invoking command in '/home/allen/rm_ws/build/fake_vel_transform': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/fake_vel_transform -- -j2 -l2
-Invoked command in '/home/allen/rm_ws/build/fake_vel_transform' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/fake_vel_transform -- -j2 -l2
-Invoking command in '/home/allen/rm_ws/build/fake_vel_transform': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/fake_vel_transform
-Invoked command in '/home/allen/rm_ws/build/fake_vel_transform' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/fake_vel_transform

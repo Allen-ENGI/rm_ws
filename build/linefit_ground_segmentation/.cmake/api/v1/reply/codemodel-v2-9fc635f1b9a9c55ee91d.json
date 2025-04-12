@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ca57baaeb139ee5d70de.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "linefit_ground_segmentation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "headers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-headers-2c8b371220ed38acc271.json",
+					"name" : "headers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linefit_ground_segmentation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linefit_ground_segmentation-e3a72b6f9f1249f3b308.json",
+					"name" : "linefit_ground_segmentation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linefit_ground_segmentation_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linefit_ground_segmentation_uninstall-e353c19859a48731ab31.json",
+					"name" : "linefit_ground_segmentation_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a409a161f73630593878.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/allen/rm_ws/build/linefit_ground_segmentation",
+		"source" : "/home/allen/rm_ws/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

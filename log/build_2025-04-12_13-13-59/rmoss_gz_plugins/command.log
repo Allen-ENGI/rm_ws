@@ -1,0 +1,4 @@
+Invoking command in '/home/allen/rm_ws/build/rmoss_gz_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rmoss_gz_plugins -- -j2 -l2
+Invoked command in '/home/allen/rm_ws/build/rmoss_gz_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rmoss_gz_plugins -- -j2 -l2
+Invoking command in '/home/allen/rm_ws/build/rmoss_gz_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rmoss_gz_plugins
+Invoked command in '/home/allen/rm_ws/build/rmoss_gz_plugins' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rmoss_gz_plugins

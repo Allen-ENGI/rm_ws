@@ -1,0 +1,49 @@
+[0.035s] Invoking command in '/home/allen/rm_ws/build/costmap_converter': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/rmoss_gz_plugins:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --build /home/allen/rm_ws/build/costmap_converter -- -j2 -l2
+[0.244s] [ 10%] Built target gtest_main
+[0.251s] [ 68%] Built target costmap_converter
+[0.352s] [ 78%] Built target standalone_converter
+[0.361s] [ 89%] Built target gtest
+[0.442s] [100%] Built target test_costmap_polygons
+[0.472s] Invoked command in '/home/allen/rm_ws/build/costmap_converter' returned '0': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/rmoss_gz_plugins:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --build /home/allen/rm_ws/build/costmap_converter -- -j2 -l2
+[0.476s] Invoking command in '/home/allen/rm_ws/build/costmap_converter': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/rmoss_gz_plugins:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --install /home/allen/rm_ws/build/costmap_converter
+[0.512s] -- Install configuration: "Release"
+[0.512s] -- Execute custom install script
+[0.513s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/lib/libcostmap_converter.so
+[0.513s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/bin/standalone_converter
+[0.514s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_converter_interface.h
+[0.515s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/background_subtractor.h
+[0.516s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/blob_detector.h
+[0.516s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/costmap_to_dynamic_obstacles.h
+[0.518s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Ctracker.h
+[0.518s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/HungarianAlg.h
+[0.519s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/Kalman.h
+[0.520s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/README.md
+[0.521s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_dynamic_obstacles/multitarget_tracker/defines.h
+[0.522s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_convex_hull.h
+[0.522s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_lines_ransac.h
+[0.523s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons.h
+[0.524s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/costmap_to_polygons_concave.h
+[0.525s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/include//costmap_converter/misc.h
+[0.526s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/library_path.sh
+[0.527s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/library_path.dsv
+[0.528s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter//costmap_converter_plugins.xml
+[0.529s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/ament_index/resource_index/package_run_dependencies/costmap_converter
+[0.530s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/ament_index/resource_index/parent_prefix_path/costmap_converter
+[0.531s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.sh
+[0.531s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/ament_prefix_path.dsv
+[0.532s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/path.sh
+[0.533s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/environment/path.dsv
+[0.534s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/local_setup.bash
+[0.536s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/local_setup.sh
+[0.537s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/local_setup.zsh
+[0.539s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/local_setup.dsv
+[0.540s] -- Symlinking: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/package.dsv
+[0.574s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/ament_index/resource_index/packages/costmap_converter
+[0.575s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/ament_index/resource_index/costmap_converter__pluginlib__plugin/costmap_converter
+[0.577s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.577s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_libraries-extras.cmake
+[0.579s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.579s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig.cmake
+[0.582s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/cmake/costmap_converterConfig-version.cmake
+[0.582s] -- Up-to-date symlink: /home/allen/rm_ws/install/costmap_converter/share/costmap_converter/package.xml
+[0.589s] Invoked command in '/home/allen/rm_ws/build/costmap_converter' returned '0': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/rmoss_gz_plugins:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/opt/ros/humble LD_LIBRARY_PATH=/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --install /home/allen/rm_ws/build/costmap_converter

@@ -21,7 +21,7 @@
         <gazebo reference="${wheel_name}">
         <material>Gazebo/Blue</material>
         </gazebo>
-
+        
         <joint name="${wheel_name}_joint" type="continuous">
             <parent link="base_link"/>
             <child link="${wheel_name}"/>

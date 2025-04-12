@@ -29,7 +29,7 @@ def generate_launch_description():
     
     declare_use_lio_rviz_cmd = DeclareLaunchArgument(
         'lio_rviz',
-        default_value='false',
+        default_value='true',
         description='Visualize FAST_LIO or Point_LIO cloud_map if true')
     
 
@@ -133,12 +133,11 @@ def generate_launch_description():
         parameters=[segmentation_params]
     )
 
-
     # pointcloud to laser scan
     bringup_pointcloud_to_laserscan_node = Node(
         package='pointcloud_to_laserscan', executable='pointcloud_to_laserscan_node',
-        # remappings=[('cloud_in',  ['segmentation/obstacle']),
-        remappings=[('cloud_in',  ['/livox/lidar_PointCloud2']),          
+        remappings=[('cloud_in',  ['segmentation/obstacle']),
+        # remappings=[('cloud_in',  ['/livox/lidar_PointCloud2']),          
                     ('scan',  ['/scan'])],
         parameters=[{
             'target_frame': 'livox_frame',
@@ -157,7 +156,6 @@ def generate_launch_description():
         name='pointcloud_to_laserscan'
     )
 
-
     start_mapping = Node(
         condition = LaunchConfigurationEquals('mode', 'mapping'),
         package='slam_toolbox',
@@ -168,7 +166,6 @@ def generate_launch_description():
             {'use_sim_time': use_sim_time,}
         ],
     )
-
 
     rm_nav_bringup_dir = get_package_share_directory('rm_nav_bringup')
     nav2_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world]), ".yaml"

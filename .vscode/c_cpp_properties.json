@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/allen/rm_ws/install/teb_local_planner/include/**",
+        "/home/allen/rm_ws/install/teb_msgs/include/**",
+        "/home/allen/rm_ws/install/ros2_livox_simulation/include/**",
+        "/home/allen/rm_ws/install/pointcloud_to_laserscan/include/**",
+        "/home/allen/rm_ws/install/fast_lio/include/**",
+        "/home/allen/rm_ws/install/livox_ros_driver2/include/**",
+        "/home/allen/rm_ws/install/linefit_ground_segmentation/include/**",
+        "/home/allen/rm_ws/install/imu_complementary_filter/include/**",
+        "/home/allen/rm_ws/install/fake_vel_transform/include/**",
+        "/home/allen/rm_ws/install/costmap_converter/include/**",
+        "/home/allen/rm_ws/install/costmap_converter_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/allen/rm_ws/src/livox_laser_simulation_RO2/include/**",
+        "/home/allen/rm_ws/src/rm_localization/FAST_LIO/include/**",
+        "/home/allen/rm_ws/src/rm_localization/icp_registration/include/**",
+        "/home/allen/rm_ws/src/rm_localization/point_lio/include/**",
+        "/home/allen/rm_ws/src/rm_navigation/costmap_converter/costmap_converter/include/**",
+        "/home/allen/rm_ws/src/rm_navigation/fake_vel_transform/include/**",
+        "/home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_local_planner/include/**",
+        "/home/allen/rm_ws/src/rm_perception/imu_complementary_filter/include/**",
+        "/home/allen/rm_ws/src/rm_perception/linefit_ground_segementation_ros2/linefit_ground_segmentation/include/**",
+        "/home/allen/rm_ws/src/rm_perception/pointcloud_to_laserscan/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

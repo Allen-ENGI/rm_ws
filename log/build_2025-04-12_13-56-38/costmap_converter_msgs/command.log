@@ -1,0 +1,4 @@
+Invoking command in '/home/allen/rm_ws/build/costmap_converter_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/costmap_converter_msgs -- -j2 -l2
+Invoked command in '/home/allen/rm_ws/build/costmap_converter_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/costmap_converter_msgs -- -j2 -l2
+Invoking command in '/home/allen/rm_ws/build/costmap_converter_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/costmap_converter_msgs
+Invoked command in '/home/allen/rm_ws/build/costmap_converter_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/costmap_converter_msgs

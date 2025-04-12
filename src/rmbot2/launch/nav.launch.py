@@ -1,12 +1,12 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, GroupAction
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, GroupAction, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
-from launch.conditions import LaunchConfigurationEquals
+from launch.conditions import LaunchConfigurationEquals, LaunchConfigurationNotEquals
 from launch.conditions import IfCondition
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 
 
 
@@ -48,7 +48,11 @@ def generate_launch_description():
         default_value='fastlio',
         description='Choose lio alogrithm: fastlio or pointlio')
 
-    
+    declare_localization_cmd = DeclareLaunchArgument(
+        'localization',
+        default_value='icp',
+        description='Choose localization method: slam_toolbox, amcl, icp')
+
     declare_mode_cmd = DeclareLaunchArgument(
         'mode',
         default_value='nav',
@@ -165,11 +169,82 @@ def generate_launch_description():
         ],
     )
 
-
     rm_nav_bringup_dir = get_package_share_directory('rm_nav_bringup')
+    navigation2_launch_dir = os.path.join(get_package_share_directory('rm_navigation'), 'launch')
+
+
+ ################################## slam_toolbox parameters start ##################################
+    slam_toolbox_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world])
+    slam_toolbox_localization_file_dir = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'mapper_params_localization_sim.yaml')
+    slam_toolbox_mapping_file_dir = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'mapper_params_online_async_sim.yaml')
+    ################################### slam_toolbox parameters end ###################################
+
+    ################################### navigation2 parameters start ##################################
     nav2_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world]), ".yaml"
     nav2_params_file_dir = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'nav2_params_sim.yaml')
-    navigation2_launch_dir = os.path.join(get_package_share_directory('rm_navigation'), 'launch')
+    ################################### navigation2 parameters end ####################################
+
+    ################################ icp_registration parameters start ################################
+    icp_pcd_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'PCD', world]), ".pcd"
+    icp_registration_params_dir = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'icp_registration_sim.yaml')
+    ################################# icp_registration parameters end #################################
+
+    start_localization_group = GroupAction(
+        condition = LaunchConfigurationEquals('mode', 'nav'),
+        actions=[
+            Node(
+                condition = LaunchConfigurationEquals('localization', 'slam_toolbox'),
+                package='slam_toolbox',
+                executable='localization_slam_toolbox_node',
+                name='slam_toolbox',
+                parameters=[
+                    slam_toolbox_localization_file_dir,
+                    {'use_sim_time': use_sim_time,
+                    'map_file_name': slam_toolbox_map_dir,
+                    'map_start_pose': [0.0, 0.0, 0.0]}
+                ],
+            ),
+
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(os.path.join(navigation2_launch_dir,'localization_amcl_launch.py')),
+                condition = LaunchConfigurationEquals('localization', 'amcl'),
+                launch_arguments = {
+                    'use_sim_time': use_sim_time,
+                    'params_file': nav2_params_file_dir}.items()
+            ),
+
+            TimerAction(
+                period=7.0,
+                actions=[
+                    Node(
+                        condition=LaunchConfigurationEquals('localization', 'icp'),
+                        package='icp_registration',
+                        executable='icp_registration_node',
+                        output='screen',
+                        parameters=[
+                            icp_registration_params_dir,
+                            {'use_sim_time': use_sim_time,
+                                'pcd_path': icp_pcd_dir}
+                        ],
+                        # arguments=['--ros-args', '--log-level', ['icp_registration:=', 'DEBUG']]
+                    )
+                ]
+            ),
+
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(os.path.join(navigation2_launch_dir, 'map_server_launch.py')),
+                condition = LaunchConfigurationNotEquals('localization', 'slam_toolbox'),
+                launch_arguments={
+                    'use_sim_time': use_sim_time,
+                    'map': nav2_map_dir,
+                    'params_file': nav2_params_file_dir,
+                    'container_name': 'nav2_container'}.items())
+        ]
+    )
+
+
+    nav2_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world]), ".yaml"
+    nav2_params_file_dir = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'nav2_params_sim.yaml')
 
     start_navigation2 = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(navigation2_launch_dir, 'bringup_rm_navigation.py')),
@@ -178,17 +253,7 @@ def generate_launch_description():
             'map': nav2_map_dir,
             'params_file': nav2_params_file_dir,
             'nav_rviz': use_nav_rviz}.items()
-    )
-
-    bringup_fake_vel_transform_node = Node(
-        package='fake_vel_transform',
-        executable='fake_vel_transform_node',
-        output='screen',
-        parameters=[{
-            'use_sim_time': use_sim_time,
-            'spin_speed': 5.0 # rad/s
-        }]
-    )
+    )   
 
 
     ld = LaunchDescription()
@@ -198,6 +263,7 @@ def generate_launch_description():
     ld.add_action(declare_world_cmd)
     ld.add_action(declare_use_lio_rviz_cmd)
     ld.add_action(declare_mode_cmd)
+    ld.add_action(declare_localization_cmd)
 
     ld.add_action(start_rm_simulation)
     # ld.add_action(bringup_imu_complementary_filter_node)
@@ -211,5 +277,6 @@ def generate_launch_description():
     # ld.add_action(bringup_fake_vel_transform_node)
 
     ld.add_action(start_mapping)
+    ld.add_action(start_localization_group)
     ld.add_action(start_navigation2)
     return ld

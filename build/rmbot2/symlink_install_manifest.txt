@@ -5,6 +5,7 @@
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control.xacro
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control2.xacro
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control3.xacro
+/home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control4.xacro
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/inertial_macros.xacro
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/lidar.xacro
 /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/mid360.xacro

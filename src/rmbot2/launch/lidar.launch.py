@@ -22,7 +22,7 @@ def generate_launch_description():
     
     declare_use_lio_rviz_cmd = DeclareLaunchArgument(
         'lio_rviz',
-        default_value='false',
+        default_value='true',
         description='Visualize FAST_LIO or Point_LIO cloud_map if true')
 
     declare_nav_rviz_cmd = DeclareLaunchArgument(

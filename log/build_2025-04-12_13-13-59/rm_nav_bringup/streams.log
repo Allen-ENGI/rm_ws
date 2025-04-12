@@ -1,0 +1,75 @@
+[0.026s] Invoking command in '/home/allen/rm_ws/build/rm_nav_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_nav_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rm_nav_bringup
+[0.159s] -- The C compiler identification is GNU 11.4.0
+[0.292s] -- The CXX compiler identification is GNU 11.4.0
+[0.306s] -- Detecting C compiler ABI info
+[0.524s] -- Detecting C compiler ABI info - done
+[0.535s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.536s] -- Detecting C compile features
+[0.536s] -- Detecting C compile features - done
+[0.539s] -- Detecting CXX compiler ABI info
+[0.806s] -- Detecting CXX compiler ABI info - done
+[0.814s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.817s] -- Detecting CXX compile features
+[0.817s] -- Detecting CXX compile features - done
+[0.819s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.099s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.208s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.267s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.368s] -- Configuring done
+[1.379s] -- Generating done
+[1.383s] -- Build files have been written to: /home/allen/rm_ws/build/rm_nav_bringup
+[1.394s] Invoked command in '/home/allen/rm_ws/build/rm_nav_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/allen/rm_ws/src/rm_nav_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/rm_nav_bringup
+[1.397s] Invoking command in '/home/allen/rm_ws/build/rm_nav_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rm_nav_bringup -- -j2 -l2
+[1.516s] Invoked command in '/home/allen/rm_ws/build/rm_nav_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/allen/rm_ws/build/rm_nav_bringup -- -j2 -l2
+[1.522s] Invoking command in '/home/allen/rm_ws/build/rm_nav_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rm_nav_bringup
+[1.545s] -- Install configuration: ""
+[1.547s] -- Execute custom install script
+[1.548s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/launch/bringup_real.launch.py
+[1.580s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/launch/bringup_sim.launch.py
+[1.604s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/MID360_config.json
+[1.630s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/fastlio_mid360_real.yaml
+[1.655s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/icp_registration_real.yaml
+[1.684s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/mapper_params_localization_real.yaml
+[1.712s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/mapper_params_online_async_real.yaml
+[1.736s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/measurement_params_real.yaml
+[1.761s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/nav2_params_real.yaml
+[1.786s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/pointlio_mid360_real.yaml
+[1.816s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/reality/segmentation_real.yaml
+[1.840s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/simulation/fastlio_mid360_sim.yaml
+[1.863s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/simulation/icp_registration_sim.yaml
+[1.892s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/simulation/mapper_params_localization_sim.yaml
+[1.915s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/simulation/mapper_params_online_async_sim.yaml
+[1.942s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/simulation/measurement_params_sim.yaml
+[1.967s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/simulation/nav2_params_sim.yaml
+[1.990s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/simulation/pointlio_mid360_sim.yaml
+[2.027s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/config/simulation/segmentation_sim.yaml
+[2.053s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/map/RMUC.data
+[2.083s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/map/RMUC.pgm
+[2.112s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/map/RMUC.posegraph
+[2.136s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/map/RMUC.yaml
+[2.160s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/map/RMUL.data
+[2.184s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/map/RMUL.pgm
+[2.208s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/map/RMUL.posegraph
+[2.233s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/map/RMUL.yaml
+[2.257s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/PCD/RMUC.pcd
+[2.287s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/PCD/RMUL.pcd
+[2.311s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/rviz/fastlio.rviz
+[2.337s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/rviz/pointlio.rviz
+[2.361s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/urdf/sentry_robot_real.xacro
+[2.386s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/urdf/sentry_robot_sim.xacro
+[2.412s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/ament_index/resource_index/package_run_dependencies/rm_nav_bringup
+[2.436s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/ament_index/resource_index/parent_prefix_path/rm_nav_bringup
+[2.461s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/environment/ament_prefix_path.sh
+[2.492s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/environment/ament_prefix_path.dsv
+[2.522s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/environment/path.sh
+[2.545s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/environment/path.dsv
+[2.571s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/local_setup.bash
+[2.596s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/local_setup.sh
+[2.624s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/local_setup.zsh
+[2.659s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/local_setup.dsv
+[2.688s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.dsv
+[2.721s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/ament_index/resource_index/packages/rm_nav_bringup
+[2.754s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/cmake/rm_nav_bringupConfig.cmake
+[2.791s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/cmake/rm_nav_bringupConfig-version.cmake
+[2.815s] -- Symlinking: /home/allen/rm_ws/install/rm_nav_bringup/share/rm_nav_bringup/package.xml
+[2.844s] Invoked command in '/home/allen/rm_ws/build/rm_nav_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/allen/rm_ws/build/rm_nav_bringup

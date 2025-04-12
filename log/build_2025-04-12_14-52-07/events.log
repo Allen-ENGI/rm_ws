@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.009199] (-) JobUnselected: {'identifier': 'costmap_converter'}
+[0.009277] (-) JobUnselected: {'identifier': 'costmap_converter_msgs'}
+[0.009314] (-) JobUnselected: {'identifier': 'fake_vel_transform'}
+[0.009348] (-) JobUnselected: {'identifier': 'fast_lio'}
+[0.009381] (-) JobUnselected: {'identifier': 'icp_registration'}
+[0.009481] (-) JobUnselected: {'identifier': 'imu_complementary_filter'}
+[0.009570] (-) JobUnselected: {'identifier': 'linefit_ground_segmentation'}
+[0.009605] (-) JobUnselected: {'identifier': 'linefit_ground_segmentation_ros'}
+[0.009638] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.009670] (-) JobUnselected: {'identifier': 'point_lio'}
+[0.009702] (-) JobUnselected: {'identifier': 'pointcloud_to_laserscan'}
+[0.009735] (-) JobUnselected: {'identifier': 'rm_nav_bringup'}
+[0.009767] (-) JobUnselected: {'identifier': 'rm_navigation'}
+[0.009854] (-) JobUnselected: {'identifier': 'ros2_livox_simulation'}
+[0.009890] (-) JobUnselected: {'identifier': 'teb_local_planner'}
+[0.009923] (-) JobUnselected: {'identifier': 'teb_msgs'}
+[0.009958] (rmbot2) JobQueued: {'identifier': 'rmbot2', 'dependencies': OrderedDict()}
+[0.009996] (rmbot2) JobStarted: {'identifier': 'rmbot2'}
+[0.103456] (-) TimerEvent: {}
+[0.121801] (rmbot2) JobProgress: {'identifier': 'rmbot2', 'progress': 'cmake'}
+[0.121903] (rmbot2) JobProgress: {'identifier': 'rmbot2', 'progress': 'build'}
+[0.121945] (rmbot2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/allen/rm_ws/build/rmbot2', '--', '-j2', '-l2'], 'cwd': '/home/allen/rm_ws/build/rmbot2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en_CA:en'), ('USER', 'allen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib::/usr/local/lib'), ('HOME', '/home/allen'), ('OLDPWD', '/home/allen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('SYSTEMD_EXEC_PID', '1935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3818'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'allen'), ('JOURNAL_STREAM', '8:26099'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'allen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/allen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/allen-virtual-machine:@/tmp/.ICE-unix/1899,unix/allen-virtual-machine:/tmp/.ICE-unix/1899'), ('INVOCATION_ID', 'e7b3deabeac14985bb215889eb353174'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GGHX42'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4e78da57-1187-4433-8dc2-7397bde667d2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/allen/rm_ws/build/rmbot2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.206877] (-) TimerEvent: {}
+[0.316726] (-) TimerEvent: {}
+[0.417641] (-) TimerEvent: {}
+[0.525342] (-) TimerEvent: {}
+[0.636696] (-) TimerEvent: {}
+[0.737567] (-) TimerEvent: {}
+[0.824623] (rmbot2) CommandEnded: {'returncode': 0}
+[0.839706] (rmbot2) JobProgress: {'identifier': 'rmbot2', 'progress': 'install'}
+[0.839814] (-) TimerEvent: {}
+[0.944191] (-) TimerEvent: {}
+[0.982338] (rmbot2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/allen/rm_ws/build/rmbot2'], 'cwd': '/home/allen/rm_ws/build/rmbot2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('LANGUAGE', 'en_CA:en'), ('USER', 'allen'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib::/usr/local/lib'), ('HOME', '/home/allen'), ('OLDPWD', '/home/allen'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1752'), ('SYSTEMD_EXEC_PID', '1935'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3818'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'allen'), ('JOURNAL_STREAM', '8:26099'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'allen'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/allen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/allen-virtual-machine:@/tmp/.ICE-unix/1899,unix/allen-virtual-machine:/tmp/.ICE-unix/1899'), ('INVOCATION_ID', 'e7b3deabeac14985bb215889eb353174'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GGHX42'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4e78da57-1187-4433-8dc2-7397bde667d2'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/allen/rm_ws/build/rmbot2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.023095] (rmbot2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.027066] (rmbot2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.030900] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/config/simulation/fastlio_mid360_sim.yaml\n'}
+[1.035144] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/config/simulation/mapper_params_offline_async.yaml\n'}
+[1.036111] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/config/simulation/mapper_params_online_async_sim.yaml\n'}
+[1.039649] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/config/simulation/segmentation_sim.yaml\n'}
+[1.040758] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control.xacro\n'}
+[1.042896] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control2.xacro\n'}
+[1.047954] (-) TimerEvent: {}
+[1.053431] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control3.xacro\n'}
+[1.053838] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/gazebo_control4.xacro\n'}
+[1.053979] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/inertial_macros.xacro\n'}
+[1.057512] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/lidar.xacro\n'}
+[1.060089] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/mid360.xacro\n'}
+[1.060324] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/robot.urdf.xacro\n'}
+[1.062328] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/robot_core2.xacro\n'}
+[1.063062] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/robot_core_upper.xacro\n'}
+[1.063399] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/robot_structure.xacro\n'}
+[1.063547] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/description/wheel.xacro\n'}
+[1.083719] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/launch_world.launch.py\n'}
+[1.083995] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/lidar.launch.py\n'}
+[1.084126] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/mapping.launch.py\n'}
+[1.089265] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/nav.launch.py\n'}
+[1.089521] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/rsp.launch.py\n'}
+[1.097882] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/launch/view.launch.py\n'}
+[1.099354] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUC2024_world/RMUC2024_world.world\n'}
+[1.100316] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2024_world/RMUL2024_world.world\n'}
+[1.105069] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2024_world/RMUL2024_world_dynamic_obstacles.world\n'}
+[1.106209] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2024_world/model.config\n'}
+[1.107095] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2024_world/model.sdf\n'}
+[1.109068] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2025NA_world/RMULNA2025_world.world\n'}
+[1.110961] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2025NA_world/RMULNA2025_world_dynamic_obstacles.world\n'}
+[1.113545] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2025NA_world/model.config\n'}
+[1.113716] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/world/RMUL2025NA_world/model.sdf\n'}
+[1.114676] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/rmul_map_save.pgm\n'}
+[1.116410] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/rmul_map_save.yaml\n'}
+[1.117335] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/rmul_map_serial.data\n'}
+[1.128896] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/rmul_map_serial.posegraph\n'}
+[1.129244] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/ul_map.data\n'}
+[1.130574] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/ul_map.pgm\n'}
+[1.135641] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/ul_map.posegraph\n'}
+[1.141621] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/map/ul_map.yaml\n'}
+[1.148848] (-) TimerEvent: {}
+[1.159100] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/RMUC2024_world/meshes/RMUC_2024.stl\n'}
+[1.163203] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/RMUC2024_world/model.config\n'}
+[1.169147] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/RMUC2024_world/model.sdf\n'}
+[1.169409] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/RMUL2024_world/meshes/RMUL_2024.stl\n'}
+[1.169517] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/mid360.stl\n'}
+[1.182202] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle1/model.config\n'}
+[1.182491] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle1/model.sdf\n'}
+[1.182597] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle10/model.config\n'}
+[1.186723] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle10/model.sdf\n'}
+[1.187763] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle11/model.config\n'}
+[1.189812] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle11/model.sdf\n'}
+[1.190538] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle12/model.config\n'}
+[1.192182] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle12/model.sdf\n'}
+[1.193982] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle2/model.config\n'}
+[1.195312] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle2/model.sdf\n'}
+[1.197507] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle3/model.config\n'}
+[1.198032] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle3/model.sdf\n'}
+[1.199561] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle4/model.config\n'}
+[1.199920] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle4/model.sdf\n'}
+[1.201649] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle5/model.config\n'}
+[1.202417] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle5/model.sdf\n'}
+[1.203456] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle6/model.config\n'}
+[1.205563] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle6/model.sdf\n'}
+[1.207477] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle7/model.config\n'}
+[1.208166] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle7/model.sdf\n'}
+[1.209558] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle8/model.config\n'}
+[1.211524] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle8/model.sdf\n'}
+[1.212230] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle9/model.config\n'}
+[1.214009] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle9/model.sdf\n'}
+[1.215940] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/CMakeLists.txt\n'}
+[1.216748] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle1.so\n'}
+[1.218354] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle10.so\n'}
+[1.219957] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle11.so\n'}
+[1.220112] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle12.so\n'}
+[1.221260] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle2.so\n'}
+[1.228384] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle3.so\n'}
+[1.235117] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle4.so\n'}
+[1.240729] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle5.so\n'}
+[1.240919] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle6.so\n'}
+[1.243216] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle7.so\n'}
+[1.258687] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle8.so\n'}
+[1.258978] (-) TimerEvent: {}
+[1.259921] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacle9.so\n'}
+[1.260056] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/lib/libobstacles.so\n'}
+[1.260252] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle1.cc\n'}
+[1.260353] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle10.cc\n'}
+[1.260450] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle11.cc\n'}
+[1.270054] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle12.cc\n'}
+[1.270381] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle13.cc\n'}
+[1.272845] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle2.cc\n'}
+[1.273010] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle3.cc\n'}
+[1.279921] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle4.cc\n'}
+[1.280096] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle5.cc\n'}
+[1.280400] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle6.cc\n'}
+[1.282097] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle7.cc\n'}
+[1.286528] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle8.cc\n'}
+[1.292661] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacle9.cc\n'}
+[1.292989] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/meshes/obstacles/obstacle_plugin/obstacles.cc\n'}
+[1.293096] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/fastlio.rviz\n'}
+[1.293374] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/gazebo.rviz\n'}
+[1.293505] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/pointlio.rviz\n'}
+[1.293601] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/rviz2.rviz\n'}
+[1.293785] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/rviz/rviz_lidar.rviz\n'}
+[1.293894] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/ament_index/resource_index/package_run_dependencies/rmbot2\n'}
+[1.293999] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/ament_index/resource_index/parent_prefix_path/rmbot2\n'}
+[1.294095] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/environment/ament_prefix_path.sh\n'}
+[1.302911] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/environment/ament_prefix_path.dsv\n'}
+[1.306878] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/environment/path.sh\n'}
+[1.306989] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/environment/path.dsv\n'}
+[1.307088] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/local_setup.bash\n'}
+[1.307205] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/local_setup.sh\n'}
+[1.307406] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/local_setup.zsh\n'}
+[1.307505] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/local_setup.dsv\n'}
+[1.307600] (rmbot2) StdoutLine: {'line': b'-- Symlinking: /home/allen/rm_ws/install/rmbot2/share/rmbot2/package.dsv\n'}
+[1.359926] (-) TimerEvent: {}
+[1.396251] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/ament_index/resource_index/packages/rmbot2\n'}
+[1.396545] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/cmake/rmbot2Config.cmake\n'}
+[1.396664] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/cmake/rmbot2Config-version.cmake\n'}
+[1.396781] (rmbot2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/allen/rm_ws/install/rmbot2/share/rmbot2/package.xml\n'}
+[1.417129] (rmbot2) CommandEnded: {'returncode': 0}
+[1.463031] (-) TimerEvent: {}
+[1.579446] (-) TimerEvent: {}
+[1.621555] (rmbot2) JobEnded: {'identifier': 'rmbot2', 'rc': 0}
+[1.624931] (-) EventReactorShutdown: {}
