@@ -1,1 +1,0 @@
-/home/allen/rm_ws/build/costmap_converter_msgs/rosidl_generator_py/costmap_converter_msgs/msg/_obstacle_array_msg_s.c

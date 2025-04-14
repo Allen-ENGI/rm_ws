@@ -1,1 +1,0 @@
-/home/allen/rm_ws/build/rmbot2/ament_cmake_core/rmbot2Config-version.cmake

@@ -2,15 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <gazebo>
-        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
-
-            <ros>
-                <!-- Add a namespace -->
-                <namespace>/</namespace>
-                <!-- Remap the default topic -->
-                <remapping>cmd_vel:=cmd_vel</remapping>
-                <remapping>odom:=odom</remapping>
-            </ros>
+        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">           
              <!-- Set control loop update rate -->
             <update_rate>100</update_rate>
             <!-- Set odom publish rate -->
@@ -27,8 +19,7 @@
             <!-- Limits -->
             <max_wheel_torque>200</max_wheel_torque>
             <max_wheel_acceleration>10.0</max_wheel_acceleration>
-
-            
+        
             <!-- Output -->
             <odometry_frame>odom</odometry_frame>
             <robot_base_frame>base_link</robot_base_frame>

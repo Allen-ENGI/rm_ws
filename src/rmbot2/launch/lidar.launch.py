@@ -12,8 +12,11 @@ from launch.conditions import IfCondition
 def generate_launch_description():
     
     rmbot_dir= get_package_share_directory('rmbot2')
+
     fastlio_mid360_params = os.path.join(rmbot_dir, 'config', 'simulation', 'fastlio_mid360_sim.yaml')
     fastlio_rviz_cfg_dir = os.path.join(rmbot_dir, 'rviz', 'fastlio.rviz')
+    use_lio_rviz = LaunchConfiguration('lio_rviz')
+
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         'use_sim_time',
@@ -39,7 +42,8 @@ def generate_launch_description():
         'lio',
         default_value='fastlio',
         description='Select LIO mapping method')
-
+    
+    pkgname = "rmbot2"
 
     world = LaunchConfiguration('world')
     use_sim_time = LaunchConfiguration('use_sim_time')
@@ -52,8 +56,19 @@ def generate_launch_description():
             'use_sim_time': use_sim_time,
             'world': world,
             # 'robot_description': robot_description,
-            'rviz': 'true'}.items()
+            'rviz': 'false'}.items()
     )
+
+    rm_nav_bringup_dir = get_package_share_directory('rm_nav_bringup')
+
+    #################################### FAST_LIO parameters start ####################################
+    fastlio_mid360_params = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'fastlio_mid360_sim.yaml')
+    fastlio_rviz_cfg_dir = os.path.join(rm_nav_bringup_dir, 'rviz', 'fastlio.rviz')
+    ##################################### FAST_LIO parameters end #####################################
+
+    ################################### POINT_LIO parameters start ####################################
+    pointlio_mid360_params = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'pointlio_mid360_sim.yaml')
+    pointlio_rviz_cfg_dir = os.path.join(rm_nav_bringup_dir, 'rviz', 'pointlio.rviz')
 
     bringup_LIO_group = GroupAction([
         Node(
@@ -88,11 +103,41 @@ def generate_launch_description():
                 package='rviz2',
                 executable='rviz2',
                 arguments=['-d', fastlio_rviz_cfg_dir],
-                condition = IfCondition(LaunchConfiguration('lio_rviz'))
+                condition = IfCondition(use_lio_rviz),
             ),
+        ]),
+
+        GroupAction(
+            condition = LaunchConfigurationEquals('lio', 'pointlio'),
+            actions=[
+            Node(
+                package='point_lio',
+                executable='pointlio_mapping',
+                name='laserMapping',
+                output='screen',
+                parameters=[
+                    pointlio_mid360_params,
+                    {'use_sim_time': use_sim_time,
+                    'use_imu_as_input': False,  # Change to True to use IMU as input of Point-LIO
+                    'prop_at_freq_of_imu': True,
+                    'check_satu': False,
+                    'init_map_size': 10,
+                    'point_filter_num': 3,  # Options: 1, 3
+                    'space_down_sample': True,
+                    'filter_size_surf': 0.5,  # Options: 0.5, 0.3, 0.2, 0.15, 0.1
+                    'filter_size_map': 0.5,  # Options: 0.5, 0.3, 0.15, 0.1
+                    'ivox_nearby_type': 26,   # Options: 0, 6, 18, 26
+                    'runtime_pos_log_enable': False}
+                ],
+            ),
+            Node(
+                package='rviz2',
+                executable='rviz2',
+                arguments=['-d', pointlio_rviz_cfg_dir],
+                condition = IfCondition(use_lio_rviz),
+            )
         ])
     ])
-
 
     ld = LaunchDescription()
     ld.add_action(declare_io_cmd)

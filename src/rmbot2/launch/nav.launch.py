@@ -50,7 +50,7 @@ def generate_launch_description():
 
     declare_localization_cmd = DeclareLaunchArgument(
         'localization',
-        default_value='icp',
+        default_value='amcl',
         description='Choose localization method: slam_toolbox, amcl, icp')
 
     declare_mode_cmd = DeclareLaunchArgument(
@@ -170,6 +170,9 @@ def generate_launch_description():
     )
 
     rm_nav_bringup_dir = get_package_share_directory('rm_nav_bringup')
+
+    rmbot_dir = get_package_share_directory('rmbot2')
+
     navigation2_launch_dir = os.path.join(get_package_share_directory('rm_navigation'), 'launch')
 
 
@@ -244,7 +247,9 @@ def generate_launch_description():
 
 
     nav2_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world]), ".yaml"
-    nav2_params_file_dir = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'nav2_params_sim.yaml')
+    nav2_params_file_dir = os.path.join(rmbot_dir, 'config', 'simulation', 'nav2_params_sim.yaml')
+    # nav2_params_file_dir = os.path.join(rmbot_dir, 'config', 'simulation', 'nav2_params_scurm.yaml')
+
 
     start_navigation2 = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(navigation2_launch_dir, 'bringup_rm_navigation.py')),
@@ -266,15 +271,6 @@ def generate_launch_description():
     ld.add_action(declare_localization_cmd)
 
     ld.add_action(start_rm_simulation)
-    # ld.add_action(bringup_imu_complementary_filter_node)
-    # ld.add_action(bringup_LIO_group)
-
-    # skip the ground segmentation for now       
-    # ld.add_action(bringup_linefit_ground_segmentation_node)
-
-    # ld.add_action(bringup_pointcloud_to_laserscan_node) 
-
-    # ld.add_action(bringup_fake_vel_transform_node)
 
     ld.add_action(start_mapping)
     ld.add_action(start_localization_group)

@@ -1,1 +1,0 @@
-/home/allen/rm_ws/src/rm_navigation/rm_navigation/launch/navigation_launch.py

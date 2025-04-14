@@ -1,1 +1,0 @@
-/home/allen/rm_ws/build/ros2_livox_simulation/ament_cmake_environment_hooks/local_setup.bash

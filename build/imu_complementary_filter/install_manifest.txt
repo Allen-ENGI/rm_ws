@@ -1,3 +1,0 @@
-/home/allen/rm_ws/install/imu_complementary_filter/lib/libcomplementary_filter.so
-/home/allen/rm_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/export_imu_complementary_filterExport.cmake
-/home/allen/rm_ws/install/imu_complementary_filter/share/imu_complementary_filter/cmake/export_imu_complementary_filterExport-noconfig.cmake
