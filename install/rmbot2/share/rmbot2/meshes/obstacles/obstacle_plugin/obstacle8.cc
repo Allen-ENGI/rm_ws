@@ -1,1 +1,0 @@
-/home/allen/rm_ws/src/rmbot2/meshes/obstacles/obstacle_plugin/obstacle8.cc

@@ -1,1 +1,0 @@
-/home/allen/rm_ws/build/livox_ros_driver2/rosidl_generator_py/livox_ros_driver2/msg/__init__.py

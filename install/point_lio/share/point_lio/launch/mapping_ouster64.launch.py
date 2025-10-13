@@ -1,1 +1,0 @@
-/home/allen/rm_ws/src/rm_localization/point_lio/launch/mapping_ouster64.launch.py
