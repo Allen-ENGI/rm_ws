@@ -1,0 +1,12 @@
+# Ignore everything
+/*
+
+# Don’t ignore directories (so we can “unignore” src)
+!*/
+
+# Explicitly unignore .gitignore itself
+!.gitignore
+
+# Then unignore the src folder and everything under it
+!/src/
+!/src/**

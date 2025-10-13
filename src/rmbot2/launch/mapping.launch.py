@@ -54,10 +54,6 @@ def generate_launch_description():
         default_value='mapping',
         description='Choose mode: nav, mapping')
 
-
-  
-
-
     mac_rm_simulation_launch_dir = os.path.join(get_package_share_directory('rmbot2'))
     
 
@@ -201,13 +197,13 @@ def generate_launch_description():
     ld.add_action(declare_mode_cmd)
 
     ld.add_action(start_rm_simulation)
-    # ld.add_action(bringup_imu_complementary_filter_node)
-    # ld.add_action(bringup_LIO_group)
+    ld.add_action(bringup_imu_complementary_filter_node)
+    ld.add_action(bringup_LIO_group)
 
     # skip the ground segmentation for now       
     # ld.add_action(bringup_linefit_ground_segmentation_node)
 
-    # ld.add_action(bringup_pointcloud_to_laserscan_node) 
+    ld.add_action(bringup_pointcloud_to_laserscan_node) 
 
     # ld.add_action(bringup_fake_vel_transform_node)
 

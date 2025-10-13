@@ -3,19 +3,23 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, GroupAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, Command
 from launch_ros.actions import Node
 from launch.conditions import LaunchConfigurationEquals
 from launch.conditions import IfCondition
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
+
 
 
 def generate_launch_description():
     
     rmbot_dir= get_package_share_directory('rmbot2')
-
     fastlio_mid360_params = os.path.join(rmbot_dir, 'config', 'simulation', 'fastlio_mid360_sim.yaml')
     fastlio_rviz_cfg_dir = os.path.join(rmbot_dir, 'rviz', 'fastlio.rviz')
-    use_lio_rviz = LaunchConfiguration('lio_rviz')
+
+    world = LaunchConfiguration('world')
+    use_sim_time = LaunchConfiguration('use_sim_time')
+    use_nav_rviz = LaunchConfiguration('nav_rviz')
+    slam_toolbox_mapping_file_dir = os.path.join(rmbot_dir, 'config', 'simulation', 'mapper_params_online_async_sim.yaml')
 
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
@@ -27,6 +31,7 @@ def generate_launch_description():
         'lio_rviz',
         default_value='true',
         description='Visualize FAST_LIO or Point_LIO cloud_map if true')
+    
 
     declare_nav_rviz_cmd = DeclareLaunchArgument(
         'nav_rviz',
@@ -38,17 +43,19 @@ def generate_launch_description():
         default_value='RMUL',
         description='Select world (map file, pcd file, world file share the same name prefix as the this parameter)')
 
-    declare_io_cmd = DeclareLaunchArgument(
+    declare_LIO_cmd = DeclareLaunchArgument(
         'lio',
         default_value='fastlio',
-        description='Select LIO mapping method')
+        description='Choose lio alogrithm: fastlio or pointlio')
+
     
-    pkgname = "rmbot2"
+    declare_mode_cmd = DeclareLaunchArgument(
+        'mode',
+        default_value='mapping',
+        description='Choose mode: nav, mapping')
 
-    world = LaunchConfiguration('world')
-    use_sim_time = LaunchConfiguration('use_sim_time')
-
-    mac_rm_simulation_launch_dir = os.path.join(get_package_share_directory('rmbot2'))    
+    mac_rm_simulation_launch_dir = os.path.join(get_package_share_directory('rmbot2'))
+    
 
     start_rm_simulation = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(mac_rm_simulation_launch_dir, 'launch/launch_world.launch.py')),
@@ -59,16 +66,22 @@ def generate_launch_description():
             'rviz': 'false'}.items()
     )
 
-    rm_nav_bringup_dir = get_package_share_directory('rm_nav_bringup')
-
-    #################################### FAST_LIO parameters start ####################################
-    fastlio_mid360_params = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'fastlio_mid360_sim.yaml')
-    fastlio_rviz_cfg_dir = os.path.join(rm_nav_bringup_dir, 'rviz', 'fastlio.rviz')
-    ##################################### FAST_LIO parameters end #####################################
-
-    ################################### POINT_LIO parameters start ####################################
-    pointlio_mid360_params = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'pointlio_mid360_sim.yaml')
-    pointlio_rviz_cfg_dir = os.path.join(rm_nav_bringup_dir, 'rviz', 'pointlio.rviz')
+    bringup_imu_complementary_filter_node = Node(
+        package='imu_complementary_filter',
+        executable='complementary_filter_node',
+        name='complementary_filter_gain_node',
+        output='screen',
+        parameters=[
+            {'do_bias_estimation': True},
+            {'do_adaptive_gain': True},
+            {'use_mag': False},
+            {'gain_acc': 0.01},
+            {'gain_mag': 0.01},
+        ],
+        remappings=[
+            ('/imu/data_raw', '/livox/imu'),
+        ]
+    )
 
     bringup_LIO_group = GroupAction([
         Node(
@@ -103,51 +116,107 @@ def generate_launch_description():
                 package='rviz2',
                 executable='rviz2',
                 arguments=['-d', fastlio_rviz_cfg_dir],
-                condition = IfCondition(use_lio_rviz),
+                condition = IfCondition(LaunchConfiguration('lio_rviz'))
             ),
-        ]),
-
-        GroupAction(
-            condition = LaunchConfigurationEquals('lio', 'pointlio'),
-            actions=[
-            Node(
-                package='point_lio',
-                executable='pointlio_mapping',
-                name='laserMapping',
-                output='screen',
-                parameters=[
-                    pointlio_mid360_params,
-                    {'use_sim_time': use_sim_time,
-                    'use_imu_as_input': False,  # Change to True to use IMU as input of Point-LIO
-                    'prop_at_freq_of_imu': True,
-                    'check_satu': False,
-                    'init_map_size': 10,
-                    'point_filter_num': 3,  # Options: 1, 3
-                    'space_down_sample': True,
-                    'filter_size_surf': 0.5,  # Options: 0.5, 0.3, 0.2, 0.15, 0.1
-                    'filter_size_map': 0.5,  # Options: 0.5, 0.3, 0.15, 0.1
-                    'ivox_nearby_type': 26,   # Options: 0, 6, 18, 26
-                    'runtime_pos_log_enable': False}
-                ],
-            ),
-            Node(
-                package='rviz2',
-                executable='rviz2',
-                arguments=['-d', pointlio_rviz_cfg_dir],
-                condition = IfCondition(use_lio_rviz),
-            )
         ])
     ])
 
+    segmentation_params = os.path.join(rmbot_dir, 'config', 'simulation', 'segmentation_sim.yaml')
+    bringup_linefit_ground_segmentation_node = Node(
+        package='linefit_ground_segmentation_ros',
+        executable='ground_segmentation_node',
+        output='screen',
+        parameters=[segmentation_params]
+    )
+
+    # pointcloud to laser scan
+    bringup_pointcloud_to_laserscan_node = Node(
+        package='pointcloud_to_laserscan', executable='pointcloud_to_laserscan_node',
+        remappings=[('cloud_in',  ['segmentation/obstacle']),
+        # remappings=[('cloud_in',  ['/livox/lidar_PointCloud2']),          
+                    ('scan',  ['/scan'])],
+        parameters=[{
+            'target_frame': 'livox_frame',
+            'transform_tolerance': 0.001,
+            'min_height': -1.0,
+            'max_height': 2.0,
+            'angle_min': -3.14159,  # -M_PI/2
+            'angle_max': 3.14159,   # M_PI/2
+            'angle_increment': 0.01,  # M_PI/360.0
+            'scan_time': 0.3333,
+            'range_min': 0.45,
+            'range_max': 10.0,
+            'use_inf': True,
+            'inf_epsilon': 1.0
+        }],
+        name='pointcloud_to_laserscan'
+    )
+
+    start_mapping = Node(
+        condition = LaunchConfigurationEquals('mode', 'mapping'),
+        package='slam_toolbox',
+        executable='async_slam_toolbox_node',
+        name='slam_toolbox',
+        parameters=[
+            slam_toolbox_mapping_file_dir,
+            {'use_sim_time': use_sim_time,}
+        ],
+    )
+
+    rm_nav_bringup_dir = get_package_share_directory('rm_nav_bringup')
+    nav2_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world]), ".yaml"
+    nav2_params_file_dir = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'nav2_params_sim.yaml')
+    navigation2_launch_dir = os.path.join(get_package_share_directory('rm_navigation'), 'launch')
+
+    start_navigation2 = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(os.path.join(navigation2_launch_dir, 'bringup_rm_navigation.py')),
+        launch_arguments={
+            'use_sim_time': use_sim_time,
+            'map': nav2_map_dir,
+            'params_file': nav2_params_file_dir,
+            'nav_rviz': use_nav_rviz}.items()
+    )
+
+    bringup_fake_vel_transform_node = Node(
+        package='fake_vel_transform',
+        executable='fake_vel_transform_node',
+        output='screen',
+        parameters=[{
+            'use_sim_time': use_sim_time,
+            'spin_speed': 5.0 # rad/s
+        }]
+    )
+
+    rviz_config_dir = os.path.join(rmbot_dir, 'rviz', 'view_lidar.rviz')
+
+
+    open_rviz = Node(
+        package='rviz2', executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_dir],
+        output='screen'
+        )
+
     ld = LaunchDescription()
-    ld.add_action(declare_io_cmd)
+    ld.add_action(declare_LIO_cmd)
     ld.add_action(declare_use_sim_time_cmd)
     ld.add_action(declare_nav_rviz_cmd)
     ld.add_action(declare_world_cmd)
     ld.add_action(declare_use_lio_rviz_cmd)
+    ld.add_action(declare_mode_cmd)
 
     ld.add_action(start_rm_simulation)
+    ld.add_action(open_rviz)
+    # ld.add_action(bringup_imu_complementary_filter_node)
+    # ld.add_action(bringup_LIO_group)
 
-    ld.add_action(bringup_LIO_group)
-    
+    # skip the ground segmentation for now       
+    # ld.add_action(bringup_linefit_ground_segmentation_node)
+
+    # ld.add_action(bringup_pointcloud_to_laserscan_node) 
+
+    # ld.add_action(bringup_fake_vel_transform_node)
+
+    # ld.add_action(start_mapping)
+    # ld.add_action(start_navigation2)
     return ld
