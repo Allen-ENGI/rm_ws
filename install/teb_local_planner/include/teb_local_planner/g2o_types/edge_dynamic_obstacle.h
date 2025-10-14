@@ -1,1 +1,0 @@
-/home/allen/rm_ws/src/rm_navigation/teb_local_planner/teb_local_planner/include/teb_local_planner/g2o_types/edge_dynamic_obstacle.h

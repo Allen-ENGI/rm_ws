@@ -1,1 +1,0 @@
-/home/allen/rm_ws/build/teb_msgs/rosidl_generator_c/teb_msgs/msg/detail/trajectory_point_msg__struct.h

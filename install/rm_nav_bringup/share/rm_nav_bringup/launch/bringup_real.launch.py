@@ -1,1 +1,0 @@
-/home/allen/rm_ws/src/rm_nav_bringup/launch/bringup_real.launch.py

@@ -1,1 +1,0 @@
-/home/allen/rm_ws/src/rm_navigation/rm_navigation/launch/localization_amcl_launch.py

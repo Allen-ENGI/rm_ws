@@ -1,1 +1,0 @@
-/home/allen/rm_ws/src/rmbot2/launch/mapping.launch.py
