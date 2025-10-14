@@ -1,0 +1,1 @@
+/home/allen/rm_ws/src/rm_localization/FAST_LIO/msg/Pose6D.msg

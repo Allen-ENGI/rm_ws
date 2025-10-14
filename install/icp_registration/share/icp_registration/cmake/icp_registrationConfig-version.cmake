@@ -1,0 +1,1 @@
+/home/allen/rm_ws/build/icp_registration/ament_cmake_core/icp_registrationConfig-version.cmake

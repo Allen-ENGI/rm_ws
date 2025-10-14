@@ -1,0 +1,278 @@
+[0.080s] Invoking command in '/home/allen/rm_ws/build/fast_lio': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake /home/allen/rm_ws/src/rm_localization/FAST_LIO -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/fast_lio
+[0.435s] -- The C compiler identification is GNU 11.4.0
+[0.754s] -- The CXX compiler identification is GNU 11.4.0
+[0.794s] -- Detecting C compiler ABI info
+[1.175s] -- Detecting C compiler ABI info - done
+[1.214s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.214s] -- Detecting C compile features
+[1.216s] -- Detecting C compile features - done
+[1.228s] -- Detecting CXX compiler ABI info
+[1.585s] -- Detecting CXX compiler ABI info - done
+[1.619s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.620s] -- Detecting CXX compile features
+[1.625s] -- Detecting CXX compile features - done
+[3.709s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[3.733s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.385s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.730s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.973s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[5.207s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.230s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.259s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.304s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.408s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.671s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.682s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[5.776s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[5.871s] -- Looking for pthread.h
+[6.313s] -- Looking for pthread.h - found
+[6.314s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.785s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.796s] -- Found Threads: TRUE  
+[7.068s] -- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+[7.242s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[7.283s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[7.347s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[7.412s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[7.439s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[7.486s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[7.710s] -- Checking for module 'eigen3'
+[7.785s] --   Found eigen3, version 3.4.0
+[8.072s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[8.072s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[8.339s] -- Checking for module 'flann'
+[8.435s] --   Found flann, version 1.9.1
+[8.785s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[8.786s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[14.158s] -- Checking for module 'libusb-1.0'
+[14.275s] --   Found libusb-1.0, version 1.0.25
+[14.584s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[14.584s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[15.067s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[15.735s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[15.774s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[15.819s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[16.462s] -- Found Qhull version 8.0.2
+[17.284s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[18.033s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[18.040s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[18.046s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[18.051s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[18.059s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[18.061s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[18.063s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[18.065s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[18.070s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[18.078s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[18.086s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[18.091s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[18.095s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[18.099s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[18.104s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[18.107s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[18.111s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[18.116s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[18.122s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[18.124s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[18.125s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[18.126s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[18.126s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[18.128s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[18.133s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[18.255s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[18.264s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[18.265s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[18.596s] -- Found livox_ros_driver2: 1.0.0 (/home/allen/rm_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[18.691s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[19.863s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[21.403s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[21.937s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[22.053s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[22.079s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[22.195s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[22.195s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[22.195s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[22.196s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[22.303s] -- Found PythonExtra: .so  
+[22.774s] -- Configuring done
+[23.309s] -- Generating done
+[23.448s] -- Build files have been written to: /home/allen/rm_ws/build/fast_lio
+[23.567s] Invoked command in '/home/allen/rm_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake /home/allen/rm_ws/src/rm_localization/FAST_LIO -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/fast_lio
+[23.573s] Invoking command in '/home/allen/rm_ws/build/fast_lio': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --build /home/allen/rm_ws/build/fast_lio -- -j2 -l2
+[23.976s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[26.742s] [  2%] Built target fast_lio__cpp
+[26.815s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[29.583s] [  8%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o[0m
+[30.193s] [ 11%] [32m[1mLinking C shared library libfast_lio__rosidl_generator_c.so[0m
+[30.624s] [ 11%] Built target fast_lio__rosidl_generator_c
+[30.847s] [ 11%] Built target ament_cmake_python_symlink_fast_lio
+[30.922s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[31.802s] [ 17%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[32.823s] [ 20%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so[0m
+[33.072s] [ 20%] Built target fast_lio__rosidl_typesupport_cpp
+[33.139s] [ 22%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[34.309s] [ 25%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o[0m
+[35.555s] [ 28%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so[0m
+[35.870s] [ 28%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[35.957s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[37.452s] [ 34%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o[0m
+[39.268s] [ 37%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so[0m
+[39.729s] [ 37%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[39.807s] [ 40%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[41.046s] [ 42%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o[0m
+[41.331s] [ 45%] [32m[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so[0m
+[41.477s] [ 45%] Built target fast_lio__rosidl_typesupport_introspection_c
+[41.550s] [ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[42.586s] [ 51%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[42.779s] [ 54%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so[0m
+[43.006s] [ 54%] Built target fast_lio__rosidl_typesupport_c
+[43.086s] [ 57%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[44.228s] [ 60%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o[0m
+[45.681s] [ 62%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so[0m
+[45.928s] [ 62%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[46.921s] running egg_info
+[46.925s] creating fast_lio.egg-info
+[46.925s] writing fast_lio.egg-info/PKG-INFO
+[46.926s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[46.928s] writing top-level names to fast_lio.egg-info/top_level.txt
+[46.931s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[46.945s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[46.946s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[47.081s] [ 62%] Built target ament_cmake_python_build_fast_lio_egg
+[47.247s] [ 65%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o[0m
+[270.474s] [ 68%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[281.298s] [ 71%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o[0m
+[300.251s] [ 74%] [32m[1mLinking CXX executable fastlio_mapping[0m
+[303.084s] [ 74%] Built target fastlio_mapping
+[303.168s] [ 74%] Built target fast_lio
+[303.258s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[305.315s] [ 77%] Built target fast_lio__py
+[305.505s] [ 80%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o[0m
+[306.683s] [ 82%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so[0m
+[307.354s] [ 82%] Built target fast_lio__rosidl_generator_py
+[307.678s] [ 85%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[308.875s] [ 88%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[309.279s] [ 88%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[309.627s] [ 91%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[310.835s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[311.328s] [ 94%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[311.620s] [ 97%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o[0m
+[312.864s] [100%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[313.268s] [100%] Built target fast_lio__rosidl_typesupport_c__pyext
+[313.391s] Invoked command in '/home/allen/rm_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --build /home/allen/rm_ws/build/fast_lio -- -j2 -l2
+[313.411s] Invoking command in '/home/allen/rm_ws/build/fast_lio': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --install /home/allen/rm_ws/build/fast_lio
+[313.497s] -- Install configuration: "Release"
+[313.507s] -- Execute custom install script
+[313.508s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[313.594s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[313.718s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[313.827s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[313.912s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[314.028s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[314.133s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/environment/library_path.sh
+[314.308s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/environment/library_path.dsv
+[314.474s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[314.626s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[314.803s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[314.943s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[315.013s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[315.094s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp
+[315.158s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[315.235s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp
+[315.314s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[315.400s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[315.465s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[315.533s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[315.609s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[315.640s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/environment/pythonpath.sh
+[315.688s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[315.730s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[315.768s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[315.805s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[315.850s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[315.901s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[315.951s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[316.005s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[316.070s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[316.134s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[316.198s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[316.263s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[316.335s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[316.424s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[316.498s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[316.559s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[316.621s] -- Up-to-date symlink: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[316.625s] -- Up-to-date symlink: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[316.625s] -- Up-to-date symlink: /home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[316.628s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/msg/Pose6D.idl
+[316.673s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/msg/Pose6D.msg
+[316.727s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/lib/fast_lio/fastlio_mapping
+[316.775s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/config/avia.yaml
+[316.801s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/config/horizon.yaml
+[316.837s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/config/mid360.yaml
+[316.869s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/config/ouster64.yaml
+[316.910s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/config/velodyne.yaml
+[316.945s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[316.997s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/launch/mapping.launch.py
+[317.062s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[317.128s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[317.201s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[317.280s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[317.344s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[317.407s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/environment/path.sh
+[317.470s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/environment/path.dsv
+[317.526s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/local_setup.bash
+[317.561s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/local_setup.sh
+[317.630s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/local_setup.zsh
+[317.719s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/local_setup.dsv
+[317.775s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/package.dsv
+[317.847s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[317.920s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[317.983s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[318.050s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[318.113s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[318.194s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[318.258s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[318.303s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[318.357s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[318.405s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[318.476s] -- Symlinking: /home/allen/rm_ws/install/fast_lio/share/fast_lio/package.xml
+[318.557s] -- Installing: /home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[318.563s] -- Set runtime path of "/home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""
+[318.563s] -- Installing: /home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[318.567s] -- Set runtime path of "/home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""
+[318.568s] -- Installing: /home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[318.575s] -- Set runtime path of "/home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""
+[318.575s] -- Installing: /home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[318.576s] -- Set runtime path of "/home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""
+[318.579s] -- Installing: /home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[318.583s] -- Set runtime path of "/home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""
+[318.584s] -- Installing: /home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[318.586s] -- Set runtime path of "/home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""
+[318.588s] -- Installing: /home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[318.594s] -- Set runtime path of "/home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""
+[318.925s] Listing '/home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[318.925s] Compiling '/home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...
+[318.925s] Listing '/home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[318.925s] Compiling '/home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...
+[318.925s] Compiling '/home/allen/rm_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...
+[318.947s] -- Installing: /home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[318.952s] -- Set runtime path of "/home/allen/rm_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""
+[318.952s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[318.952s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[318.953s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[318.953s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[318.954s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[318.958s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[318.958s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[318.958s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[318.958s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[318.958s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[318.961s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[318.962s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[318.962s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[318.968s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[318.968s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[318.968s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[318.969s] -- Installing: /home/allen/rm_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[319.015s] Invoked command in '/home/allen/rm_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --install /home/allen/rm_ws/build/fast_lio

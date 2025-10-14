@@ -8,6 +8,7 @@ from launch.conditions import LaunchConfigurationEquals
 from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 
+from rclpy.qos import QoSProfile, ReliabilityPolicy
 
 
 def generate_launch_description():
@@ -29,7 +30,7 @@ def generate_launch_description():
     
     declare_use_lio_rviz_cmd = DeclareLaunchArgument(
         'lio_rviz',
-        default_value='true',
+        default_value='false',
         description='Visualize FAST_LIO or Point_LIO cloud_map if true')
     
 
@@ -108,7 +109,7 @@ def generate_launch_description():
                 executable='fastlio_mapping',
                 parameters=[
                     fastlio_mid360_params,
-                    {use_sim_time: use_sim_time}
+                    {'use_sim_time': use_sim_time}
                 ],
                 output='screen'
             ),
@@ -129,28 +130,30 @@ def generate_launch_description():
         parameters=[segmentation_params]
     )
 
+
     # pointcloud to laser scan
     bringup_pointcloud_to_laserscan_node = Node(
         package='pointcloud_to_laserscan', executable='pointcloud_to_laserscan_node',
-        remappings=[('cloud_in',  ['segmentation/obstacle']),
-        # remappings=[('cloud_in',  ['/livox/lidar_PointCloud2']),          
+        # remappings=[('cloud_in',  ['segmentation/obstacle']),
+        remappings=[('cloud_in',  ['/livox/lidar/pointcloud']),                       
                     ('scan',  ['/scan'])],
         parameters=[{
             'target_frame': 'livox_frame',
-            'transform_tolerance': 0.001,
-            'min_height': -1.0,
-            'max_height': 2.0,
+            'transform_tolerance': 0.01,
+            'min_height': 0.0,
+            'max_height': 10.0,
             'angle_min': -3.14159,  # -M_PI/2
             'angle_max': 3.14159,   # M_PI/2
             'angle_increment': 0.01,  # M_PI/360.0
             'scan_time': 0.3333,
             'range_min': 0.45,
-            'range_max': 10.0,
+            'range_max': 20.0,
             'use_inf': True,
             'inf_epsilon': 1.0
         }],
-        name='pointcloud_to_laserscan'
-    )
+        nam
+        
+        
 
     start_mapping = Node(
         condition = LaunchConfigurationEquals('mode', 'mapping'),
@@ -166,6 +169,7 @@ def generate_launch_description():
     rm_nav_bringup_dir = get_package_share_directory('rm_nav_bringup')
     nav2_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world]), ".yaml"
     nav2_params_file_dir = os.path.join(rm_nav_bringup_dir, 'config', 'simulation', 'nav2_params_sim.yaml')
+
     navigation2_launch_dir = os.path.join(get_package_share_directory('rm_navigation'), 'launch')
 
     start_navigation2 = IncludeLaunchDescription(
@@ -187,6 +191,15 @@ def generate_launch_description():
         }]
     )
 
+    rviz_config_dir = os.path.join(rmbot_dir, 'rviz', '3d_to_2d.rviz')
+
+    open_rviz = Node(
+        package='rviz2', executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_dir],
+        output='screen'
+        )
+
 
     ld = LaunchDescription()
     ld.add_action(declare_LIO_cmd)
@@ -196,17 +209,17 @@ def generate_launch_description():
     ld.add_action(declare_use_lio_rviz_cmd)
     ld.add_action(declare_mode_cmd)
 
+
     ld.add_action(start_rm_simulation)
     ld.add_action(bringup_imu_complementary_filter_node)
+    # ld.add_action(bringup_linefit_ground_segmentation_node)
+    ld.add_action(bringup_pointcloud_to_laserscan_node)
     ld.add_action(bringup_LIO_group)
 
-    # skip the ground segmentation for now       
-    # ld.add_action(bringup_linefit_ground_segmentation_node)
-
-    ld.add_action(bringup_pointcloud_to_laserscan_node) 
-
     # ld.add_action(bringup_fake_vel_transform_node)
+    ld.add_action(open_rviz)
 
-    ld.add_action(start_mapping)
-    ld.add_action(start_navigation2)
+    # ld.add_action(start_mapping)
+
+    # ld.add_action(start_navigation2)
     return ld

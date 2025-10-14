@@ -39,6 +39,7 @@
     </sensor>
   </gazebo>
 
+  
  <!-- IMU -->
   <link name="imu_link">
     <collision>

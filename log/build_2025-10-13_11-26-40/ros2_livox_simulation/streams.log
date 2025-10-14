@@ -1,0 +1,190 @@
+[0.065s] Invoking command in '/home/allen/rm_ws/build/ros2_livox_simulation': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake /home/allen/rm_ws/src/livox_laser_simulation_RO2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/ros2_livox_simulation
+[0.427s] -- The C compiler identification is GNU 11.4.0
+[0.637s] -- The CXX compiler identification is GNU 11.4.0
+[0.664s] -- Detecting C compiler ABI info
+[1.051s] -- Detecting C compiler ABI info - done
+[1.089s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.090s] -- Detecting C compile features
+[1.099s] -- Detecting C compile features - done
+[1.112s] -- Detecting CXX compiler ABI info
+[1.558s] -- Detecting CXX compiler ABI info - done
+[1.587s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.591s] -- Detecting CXX compile features
+[1.591s] -- Detecting CXX compile features - done
+[1.623s] -- Found ament_cmake_auto: 1.3.12 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[2.409s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.654s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.919s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[3.144s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.199s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.273s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.340s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.428s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.681s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.710s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[3.891s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.958s] -- Looking for pthread.h
+[4.298s] -- Looking for pthread.h - found
+[4.298s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.693s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.694s] -- Found Threads: TRUE  
+[4.989s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[5.063s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[5.068s] -- Checking for module 'bullet>=2.82'
+[5.196s] --   Found bullet, version 3.05
+[6.056s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[6.384s] -- Found assimp: /usr/include (found version "5.2.0") 
+[6.533s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[6.784s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[6.875s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[6.950s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.020s] -- Searching for dependencies of ignition-math6
+[7.030s] -- Looking for OGRE...
+[7.031s] -- OGRE_PREFIX_WATCH changed.
+[7.046s] -- Checking for module 'OGRE'
+[7.110s] --   Found OGRE, version 1.9.0
+[7.331s] -- Found Ogre Ghadamon (1.9.0)
+[7.401s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[7.454s] -- Looking for OGRE_Paging...
+[7.486s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[7.486s] -- Looking for OGRE_Terrain...
+[7.507s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[7.508s] -- Looking for OGRE_Property...
+[7.530s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[7.530s] -- Looking for OGRE_RTShaderSystem...
+[7.552s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[7.554s] -- Looking for OGRE_Volume...
+[7.582s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[7.582s] -- Looking for OGRE_Overlay...
+[7.625s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[8.777s] -- Looking for ignition-math6 -- found version 6.15.1
+[8.818s] -- Looking for ignition-transport8 -- found version 8.2.1
+[8.820s] -- Searching for dependencies of ignition-transport8
+[8.937s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[8.979s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[8.998s] -- Checking for module 'libzmq >= 4'
+[9.110s] --   Found libzmq , version 4.3.4
+[9.388s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[9.415s] -- Checking for module 'uuid'
+[9.489s] --   Found uuid, version 2.37.2
+[9.681s] -- Found UUID: TRUE  
+[9.710s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[9.710s] -- Searching for dependencies of ignition-msgs5
+[9.790s] -- Looking for ignition-math6 -- found version 6.15.1
+[9.805s] -- Checking for module 'tinyxml2'
+[9.928s] --   Found tinyxml2, version 9.0.0
+[10.213s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[10.249s] -- Looking for ignition-common3 -- found version 3.14.0
+[10.252s] -- Searching for dependencies of ignition-common3
+[10.258s] -- Looking for dlfcn.h - found
+[10.264s] -- Looking for libdl - found
+[10.280s] -- Found DL: TRUE  
+[10.386s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[10.421s] -- Searching for <ignition-common3> component [graphics]
+[10.447s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[10.449s] -- Searching for dependencies of ignition-common3-graphics
+[10.451s] -- Looking for ignition-math6 -- found version 6.15.1
+[10.472s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[10.472s] -- Searching for dependencies of ignition-fuel_tools4
+[11.165s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[11.232s] -- Checking for module 'jsoncpp'
+[11.353s] --   Found jsoncpp, version 1.9.5
+[11.627s] -- Found JSONCPP: TRUE  
+[11.675s] -- Checking for module 'libzip'
+[11.802s] --   Found libzip, version 1.7.3
+[12.108s] -- Found ZIP: TRUE  
+[12.108s] -- Looking for ignition-common3 -- found version 3.14.0
+[12.109s] -- Looking for ignition-math6 -- found version 6.15.1
+[12.112s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[12.147s] -- Gazebo version: 11.10
+[12.150s] -- Checking for module 'tbb'
+[12.279s] --   Found tbb, version 2021.5.0
+[12.602s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[12.652s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[12.808s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[13.244s] -- Found livox_ros_driver2: 1.0.0 (/home/allen/rm_ws/install/livox_ros_driver2/share/livox_ros_driver2/cmake)
+[13.473s] -- Checking for module 'eigen3'
+[13.580s] --   Found eigen3, version 3.4.0
+[13.885s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[13.887s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[14.058s] -- Checking for module 'flann'
+[14.123s] --   Found flann, version 1.9.1
+[14.478s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[14.480s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[21.365s] -- Checking for module 'libusb-1.0'
+[21.479s] --   Found libusb-1.0, version 1.0.25
+[21.771s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[21.773s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[22.167s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[22.889s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[22.928s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[22.962s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[23.727s] -- Found Qhull version 8.0.2
+[24.436s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[25.171s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[25.175s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[25.175s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[25.179s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[25.182s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[25.184s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[25.185s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[25.187s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[25.191s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[25.191s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[25.195s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[25.196s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[25.199s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[25.203s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[25.205s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[25.208s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[25.211s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[25.215s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[25.219s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[25.221s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[25.225s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[25.230s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[25.231s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[25.234s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[25.239s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[25.315s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono 
+[25.781s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/ros2_livox_simulation` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[25.802s] -- Configuring done
+[25.914s] -- Generating done
+[25.948s] -- Build files have been written to: /home/allen/rm_ws/build/ros2_livox_simulation
+[26.075s] Invoked command in '/home/allen/rm_ws/build/ros2_livox_simulation' returned '0': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake /home/allen/rm_ws/src/livox_laser_simulation_RO2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/allen/rm_ws/install/ros2_livox_simulation
+[26.079s] Invoking command in '/home/allen/rm_ws/build/ros2_livox_simulation': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --build /home/allen/rm_ws/build/ros2_livox_simulation -- -j2 -l2
+[26.517s] [ 33%] [32mBuilding CXX object CMakeFiles/ros2_livox.dir/src/livox_points_plugin.cpp.o[0m
+[72.910s] [ 66%] [32mBuilding CXX object CMakeFiles/ros2_livox.dir/src/livox_ode_multiray_shape.cpp.o[0m
+[96.974s] [100%] [32m[1mLinking CXX shared library libros2_livox.so[0m
+[98.831s] [100%] Built target ros2_livox
+[98.893s] Invoked command in '/home/allen/rm_ws/build/ros2_livox_simulation' returned '0': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --build /home/allen/rm_ws/build/ros2_livox_simulation -- -j2 -l2
+[98.896s] Invoking command in '/home/allen/rm_ws/build/ros2_livox_simulation': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --install /home/allen/rm_ws/build/ros2_livox_simulation
+[98.915s] -- Install configuration: ""
+[98.919s] -- Execute custom install script
+[98.919s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/include/ros2_livox/csv_reader.hpp
+[98.955s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/include/ros2_livox/livox_ode_multiray_shape.h
+[98.986s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/include/ros2_livox/livox_points_plugin.h
+[99.025s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/library_path.sh
+[99.058s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/library_path.dsv
+[99.098s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/lib/libros2_livox.so
+[99.137s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/scan_mode/mid360.csv
+[99.182s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/urdf/mid360.xacro
+[99.214s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ament_index/resource_index/package_run_dependencies/ros2_livox_simulation
+[99.245s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ament_index/resource_index/parent_prefix_path/ros2_livox_simulation
+[99.297s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/ament_prefix_path.sh
+[99.326s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/ament_prefix_path.dsv
+[99.383s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/path.sh
+[99.420s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/environment/path.dsv
+[99.458s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.bash
+[99.500s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.sh
+[99.526s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.zsh
+[99.561s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/local_setup.dsv
+[99.594s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/package.dsv
+[99.627s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ament_index/resource_index/packages/ros2_livox_simulation
+[99.656s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_dependencies-extras.cmake
+[99.694s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_include_directories-extras.cmake
+[99.721s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ament_cmake_export_libraries-extras.cmake
+[99.750s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ros2_livox_simulationConfig.cmake
+[99.790s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/cmake/ros2_livox_simulationConfig-version.cmake
+[99.847s] -- Symlinking: /home/allen/rm_ws/install/ros2_livox_simulation/share/ros2_livox_simulation/package.xml
+[99.924s] Invoked command in '/home/allen/rm_ws/build/ros2_livox_simulation' returned '0': CMAKE_PREFIX_PATH=/home/allen/rm_ws/install/livox_ros_driver2:/home/allen/rm_ws/install/teb_local_planner:/home/allen/rm_ws/install/teb_msgs:/home/allen/rm_ws/install/ros2_livox_simulation:/home/allen/rm_ws/install/rmbot2:/home/allen/rm_ws/install/rm_navigation:/home/allen/rm_ws/install/rm_nav_bringup:/home/allen/rm_ws/install/pointcloud_to_laserscan:/home/allen/rm_ws/install/point_lio:/home/allen/rm_ws/install/icp_registration:/home/allen/rm_ws/install/fast_lio:/home/allen/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/rm_ws/install/linefit_ground_segmentation:/home/allen/rm_ws/install/imu_complementary_filter:/home/allen/rm_ws/install/fake_vel_transform:/home/allen/rm_ws/install/costmap_converter:/home/allen/rm_ws/install/costmap_converter_msgs:/home/allen/Robomaster/rm_ws/install/teb_local_planner:/home/allen/Robomaster/rm_ws/install/teb_msgs:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation:/home/allen/Robomaster/rm_ws/install/rmbot2:/home/allen/Robomaster/rm_ws/install/rm_navigation:/home/allen/Robomaster/rm_ws/install/rm_nav_bringup:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan:/home/allen/Robomaster/rm_ws/install/point_lio:/home/allen/Robomaster/rm_ws/install/icp_registration:/home/allen/Robomaster/rm_ws/install/fast_lio:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation_ros:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter:/home/allen/Robomaster/rm_ws/install/fake_vel_transform:/home/allen/Robomaster/rm_ws/install/costmap_converter:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs:/home/allen/capstone/description_ws/install/ur_yt_sim:/home/allen/capstone/description_ws/install/ur10e_description:/home/allen/capstone/description_ws/install/kuka_agilus_support:/home/allen/capstone/description_ws/install/kuka_resources:/opt/ros/humble:/home/allen/capstone/description_ws/install/kuka_kr3_description LD_LIBRARY_PATH=/home/allen/rm_ws/install/livox_ros_driver2/lib:/home/allen/rm_ws/install/teb_local_planner/lib:/home/allen/rm_ws/install/teb_msgs/lib:/home/allen/rm_ws/install/ros2_livox_simulation/lib:/home/allen/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/rm_ws/install/icp_registration/lib:/home/allen/rm_ws/install/fast_lio/lib:/home/allen/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/rm_ws/install/imu_complementary_filter/lib:/home/allen/rm_ws/install/fake_vel_transform/lib:/home/allen/rm_ws/install/costmap_converter/lib:/home/allen/rm_ws/install/costmap_converter_msgs/lib:/home/allen/Robomaster/rm_ws/install/teb_local_planner/lib:/home/allen/Robomaster/rm_ws/install/teb_msgs/lib:/home/allen/Robomaster/rm_ws/install/ros2_livox_simulation/lib:/home/allen/Robomaster/rm_ws/install/pointcloud_to_laserscan/lib:/home/allen/Robomaster/rm_ws/install/icp_registration/lib:/home/allen/Robomaster/rm_ws/install/fast_lio/lib:/home/allen/Robomaster/rm_ws/install/livox_ros_driver2/lib:/home/allen/Robomaster/rm_ws/install/linefit_ground_segmentation/lib:/home/allen/Robomaster/rm_ws/install/imu_complementary_filter/lib:/home/allen/Robomaster/rm_ws/install/fake_vel_transform/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter/lib:/home/allen/Robomaster/rm_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/openvdb_vendor/lib:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib:/usr/local/lib /usr/bin/cmake --install /home/allen/rm_ws/build/ros2_livox_simulation
