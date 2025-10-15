@@ -56,7 +56,7 @@ def generate_launch_description():
         description='Choose mode: nav, mapping')
 
     mac_rm_simulation_launch_dir = os.path.join(get_package_share_directory('rmbot2'))
-    
+    pb_simulation = os.path.join(get_package_share_directory('pb_rm_simulation'))
 
     start_rm_simulation = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(mac_rm_simulation_launch_dir, 'launch/launch_world.launch.py')),
@@ -151,9 +151,8 @@ def generate_launch_description():
             'use_inf': True,
             'inf_epsilon': 1.0
         }],
-        nam
-        
-        
+        name='pointcloud_to_laserscan'
+    )
 
     start_mapping = Node(
         condition = LaunchConfigurationEquals('mode', 'mapping'),
@@ -213,13 +212,13 @@ def generate_launch_description():
     ld.add_action(start_rm_simulation)
     ld.add_action(bringup_imu_complementary_filter_node)
     # ld.add_action(bringup_linefit_ground_segmentation_node)
-    ld.add_action(bringup_pointcloud_to_laserscan_node)
+    ld.add_action(bringup_pointcloud_to_laserscan_node)   
     ld.add_action(bringup_LIO_group)
 
     # ld.add_action(bringup_fake_vel_transform_node)
-    ld.add_action(open_rviz)
+    # ld.add_action(open_rviz)
 
-    # ld.add_action(start_mapping)
+    ld.add_action(start_mapping)
 
     # ld.add_action(start_navigation2)
     return ld

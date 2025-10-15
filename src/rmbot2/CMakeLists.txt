@@ -26,7 +26,7 @@ endif()
 
 #include the added folders
 install(
-  DIRECTORY config description launch world map meshes rviz
+  DIRECTORY config description launch world map meshes rviz params
   DESTINATION share/${PROJECT_NAME}
 )
 

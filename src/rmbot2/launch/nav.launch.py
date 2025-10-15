@@ -60,9 +60,12 @@ def generate_launch_description():
 
 
     mac_rm_simulation_launch_dir = os.path.join(get_package_share_directory('rmbot2'))    
+    pb_simulation = os.path.join(get_package_share_directory('pb_rm_simulation'))
 
     start_rm_simulation = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(mac_rm_simulation_launch_dir, 'launch/launch_world.launch.py')),
+        PythonLaunchDescriptionSource(os.path.join(pb_simulation, 'launch/rm_simulation.launch.py')),
+        # PythonLaunchDescriptionSource(os.path.join(mac_rm_simulation_launch_dir, 'launch/launch_world.launch.py')),
+
         launch_arguments={
             'use_sim_time': use_sim_time,
             'world': world,
@@ -138,19 +141,19 @@ def generate_launch_description():
     bringup_pointcloud_to_laserscan_node = Node(
         package='pointcloud_to_laserscan', executable='pointcloud_to_laserscan_node',
         # remappings=[('cloud_in',  ['segmentation/obstacle']),
-        remappings=[('cloud_in',  ['/livox/lidar_PointCloud2']),          
+        remappings=[('cloud_in',  ['/livox/lidar/pointcloud']),                       
                     ('scan',  ['/scan'])],
         parameters=[{
             'target_frame': 'livox_frame',
-            'transform_tolerance': 0.001,
-            'min_height': -1.0,
-            'max_height': 2.0,
+            'transform_tolerance': 0.01,
+            'min_height': 0.0,
+            'max_height': 10.0,
             'angle_min': -3.14159,  # -M_PI/2
             'angle_max': 3.14159,   # M_PI/2
             'angle_increment': 0.01,  # M_PI/360.0
             'scan_time': 0.3333,
             'range_min': 0.45,
-            'range_max': 10.0,
+            'range_max': 20.0,
             'use_inf': True,
             'inf_epsilon': 1.0
         }],
@@ -246,8 +249,8 @@ def generate_launch_description():
     )
 
 
-    nav2_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world]), ".yaml"
-    nav2_params_file_dir = os.path.join(rmbot_dir, 'config', 'simulation', 'nav2_params_sim.yaml')
+    # nav2_map_dir = PathJoinSubstitution([rm_nav_bringup_dir, 'map', world]), ".yaml"
+    # nav2_params_file_dir = os.path.join(rmbot_dir, 'config', 'simulation', 'nav2_params_sim.yaml')
     # nav2_params_file_dir = os.path.join(rmbot_dir, 'config', 'simulation', 'nav2_params_scurm.yaml')
 
 
@@ -271,6 +274,10 @@ def generate_launch_description():
     ld.add_action(declare_localization_cmd)
 
     ld.add_action(start_rm_simulation)
+    ld.add_action(bringup_imu_complementary_filter_node)
+    # ld.add_action(bringup_linefit_ground_segmentation_node)
+    ld.add_action(bringup_pointcloud_to_laserscan_node)
+    ld.add_action(bringup_LIO_group)
 
     ld.add_action(start_mapping)
     ld.add_action(start_localization_group)

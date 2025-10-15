@@ -18,7 +18,6 @@ def generate_launch_description():
 
     use_sim_time = LaunchConfiguration('use_sim_time')
     config_path = LaunchConfiguration('config_path')
-    config_file = LaunchConfiguration('config_file')
     rviz_use = LaunchConfiguration('rviz')
     rviz_cfg = LaunchConfiguration('rviz_cfg')
 
@@ -30,10 +29,6 @@ def generate_launch_description():
         'config_path', default_value=default_config_path,
         description='Yaml config file path'
     )
-    decalre_config_file_cmd = DeclareLaunchArgument(
-        'config_file', default_value='mid360.yaml',
-        description='Config file'
-    )
     declare_rviz_cmd = DeclareLaunchArgument(
         'rviz', default_value='true',
         description='Use RViz to monitor results'
@@ -43,12 +38,17 @@ def generate_launch_description():
         description='RViz config file path'
     )
 
+    config = os.path.join(
+        get_package_share_directory('fast_lio'), 'config', 'mid360.yaml')
+
     fast_lio_node = Node(
         package='fast_lio',
         executable='fastlio_mapping',
-        parameters=[PathJoinSubstitution([config_path, config_file]),
-                    {'use_sim_time': use_sim_time}],
-        output='screen'
+        parameters=[
+            config
+        ],
+        output='screen',
+        remappings=[('/Odometry','/state_estimation')]
     )
     rviz_node = Node(
         package='rviz2',
@@ -60,11 +60,10 @@ def generate_launch_description():
     ld = LaunchDescription()
     ld.add_action(declare_use_sim_time_cmd)
     ld.add_action(declare_config_path_cmd)
-    ld.add_action(decalre_config_file_cmd)
     ld.add_action(declare_rviz_cmd)
     ld.add_action(declare_rviz_config_path_cmd)
 
     ld.add_action(fast_lio_node)
-    ld.add_action(rviz_node)
+    # ld.add_action(rviz_node)
 
     return ld

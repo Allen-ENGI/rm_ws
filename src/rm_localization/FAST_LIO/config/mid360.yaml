@@ -1,5 +1,7 @@
 /**:
     ros__parameters:
+        locate_in_prior_map: false
+        prior_map_path: "/home/sentry_ws/src/FAST_LIO/PCD/CC#3.pcd"
         feature_extract_enable: false
         point_filter_num: 3
         max_iteration: 3
@@ -10,6 +12,10 @@
         map_file_path: "./test.pcd"
 
         common:
+            odom_frame_id: "odom"
+            sensor_frame_id: "imu_link"
+            base_frame_id: "base_link"
+            send_odom_base_tf: true
             lid_topic:  "/livox/lidar"
             imu_topic:  "/livox/imu"
             time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
@@ -31,17 +37,17 @@
             fov_degree:    360.0
             det_range:     100.0
             extrinsic_est_en:  true      # true: enable the online estimation of IMU-LiDAR extrinsic
-            extrinsic_T: [ -0.011, -0.02329, 0.04412 ]
+            extrinsic_T: [ 0.0, 0.0, 0.0]
             extrinsic_R: [ 1., 0., 0.,
                             0., 1., 0.,
                             0., 0., 1.]
 
         publish:
             path_en: true                # true: publish Path
-            effect_map_en: false         # true: publish Effects
+            effect_map_en: true         # true: publish Effects
             map_en: true                 # true: publish Map cloud
             scan_publish_en:  true       # false: close all the point cloud output
-            dense_publish_en: false      # false: low down the points number in a global-frame point clouds scan.
+            dense_publish_en: true      # false: low down the points number in a global-frame point clouds scan.
             scan_bodyframe_pub_en: true  # true: output the point cloud scans in IMU-body-frame
 
         pcd_save:
